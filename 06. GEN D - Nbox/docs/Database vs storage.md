@@ -39,3 +39,8 @@ Có những loại db sau:
 CSDL không bảng (non-tabular) hoặc non-relational DB được gọi là NoSQL DB.
 
 `Graph DB:` Amazon Neptune, Apache Cassandra
+
+# - `Điều đáng lưu ý nhất là DB là một loại phần mềm dùng để insert, update và delete data, trong khi đó File system storage là một phần mềm dùng để add, update và delete files` 
+
+` Link tham khảo:` https://stackoverflow.com/questions/38120895/database-vs-file-system-storage
+
