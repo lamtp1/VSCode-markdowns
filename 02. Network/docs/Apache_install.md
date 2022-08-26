@@ -109,3 +109,8 @@ sau đó nhập Server-IP:8080/docker.html để xem trang html bạn vừa sử
 ![apache3](../img/apache3.PNG)
 
 Kết quả thế này là ok.
+
+## `Điểm khác biệt chính giữa Apache và Tomcat:`  
+
+Tomcat cung cấp nội dung động `(dynamic content)` bằng cách sử dụng logic dựa trên Java, trong khi mục đích chính của máy chủ web Apache là chỉ cung cấp nội dung tĩnh như HTML, hình ảnh, âm thanh và văn bản.
+
