@@ -1,0 +1,173 @@
+{
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 2375,
+            "code": "VTN_CNTT_OAM_SITE3_00001",
+            "name": "vOCS3.0_SITE03_OAM",
+            "display_name": "VTN_CNTT_OAM_SITE3_00001 - vOCS3.0_SITE03_OAM",
+            "service_group": {
+                "url": "http://dcim.viettel.vn/api/service/service-group/8/",
+                "id": 8,
+                "code": "OCS",
+                "name": "OCS",
+                "status": 1,
+                "slug": "OCS-4",
+                "display": "OCS"
+            },
+            "status": {
+                "value": 1,
+                "label": "Active"
+            },
+            "start_date": null,
+            "stop_date": null,
+            "tenant": {
+                "id": 19,
+                "url": "http://dcim.viettel.vn/api/tenancy/tenants/19/",
+                "display": "VIETTEL",
+                "is_discovered": true,
+                "name": "VIETTEL",
+                "slug": "viettel"
+            },
+            "frameworks": [],
+            "backup_type": {
+                "value": 1,
+                "label": "Active-Active"
+            },
+            "level_important": {
+                "value": 2,
+                "label": "Important"
+            },
+            "enduser": {
+                "value": 0,
+                "label": "External Viettel"
+            },
+            "customer": {
+                "value": 4,
+                "label": "Enterprise"
+            },
+            "user_influence": {
+                "value": 1,
+                "label": "Direct"
+            },
+            "kpi": {
+                "value": 3,
+                "label": "No KPI"
+            },
+            "peak_time": "100000",
+            "low_time": "500",
+            "max_exchange": "500",
+            "avg_exchange": "100000",
+            "purpose": "N\u00c3\u00a2ng c\u00e1\u00ba\u00a5p oam",
+            "description": "N/A",
+            "reason_deactive": "N/A",
+            "verify": {
+                "value": 2,
+                "label": "Wait"
+            },
+            "monitored": {
+                "value": 0,
+                "label": "OFF"
+            },
+            "dev_unit": {
+                "value": 1,
+                "label": "Dev Unit 1"
+            },
+            "dedicated": {
+                "value": 0,
+                "label": "Not Dedicate"
+            },
+            "reason_not_monitored": "N\u00c3\u00a2ng c\u00e1\u00ba\u00a5p oam",
+            "monitored_off_time": "2021-11-08T00:00:00+07:00",
+            "slug": "vtn_cntt_oam_site3_00001-60003884",
+            "created": "2021-11-08",
+            "last_updated": "2021-11-09T03:31:08.271709+07:00",
+            "sensitive_types": []
+        },
+        {
+            "id": 1001,
+            "code": "VTN_CNTT_OCS_00703",
+            "name": "vOCS3.0_Site3_AER",
+            "display_name": "VTN_CNTT_OCS_00703 - vOCS3.0_Site3_AER",
+            "service_group": {
+                "url": "http://dcim.viettel.vn/api/service/service-group/8/",
+                "id": 8,
+                "code": "OCS",
+                "name": "OCS",
+                "status": 1,
+                "slug": "OCS-4",
+                "display": "OCS"
+            },
+            "status": {
+                "value": 1,
+                "label": "Active"
+            },
+            "start_date": null,
+            "stop_date": null,
+            "tenant": {
+                "id": 19,
+                "url": "http://dcim.viettel.vn/api/tenancy/tenants/19/",
+                "display": "VIETTEL",
+                "is_discovered": true,
+                "name": "VIETTEL",
+                "slug": "viettel"
+            },
+            "frameworks": [],
+            "backup_type": {
+                "value": 1,
+                "label": "Active-Active"
+            },
+            "level_important": {
+                "value": 4,
+                "label": "Especially Important"
+            },
+            "enduser": {
+                "value": 0,
+                "label": "External Viettel"
+            },
+            "customer": {
+                "value": 4,
+                "label": "Enterprise"
+            },
+            "user_influence": {
+                "value": 1,
+                "label": "Direct"
+            },
+            "kpi": {
+                "value": 3,
+                "label": "No KPI"
+            },
+            "peak_time": "1",
+            "low_time": "1",
+            "max_exchange": "1",
+            "avg_exchange": "1",
+            "purpose": "Nh\u00c3\u00b3m c\u00c3\u00a1c node m\u00e1\u00ba\u00a1ng AEROSPIKE site3",
+            "description": "N/A",
+            "reason_deactive": "N/A",
+            "verify": {
+                "value": 2,
+                "label": "Wait"
+            },
+            "monitored": {
+                "value": 1,
+                "label": "AOM"
+            },
+            "dev_unit": {
+                "value": 1,
+                "label": "Dev Unit 1"
+            },
+            "dedicated": {
+                "value": 0,
+                "label": "Not Dedicate"
+            },
+            "reason_not_monitored": "Nh\u00c3\u00b3m c\u00c3\u00a1c node m\u00e1\u00ba\u00a1ng AEROSPIKE site3",
+            "monitored_off_time": "2019-09-25T07:00:00+07:00",
+            "slug": "vtn_cntt_ocs_00703-600011790",
+            "created": "2019-10-25",
+            "last_updated": "2020-11-03T09:07:01.731993+07:00",
+            "sensitive_types": []
+        }
+    ]
+}
