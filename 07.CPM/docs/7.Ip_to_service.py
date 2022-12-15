@@ -1,7 +1,7 @@
 import requests
 import json
 import asyncore
-from asyncio.windows_events import NULL
+from asyncio.windows_events import NULL # import NULL de lam gi?
 
 url = 'http://dcim.viettel.vn/api/ipam/ip-addresses/'
 service_url = 'http://dcim.viettel.vn/api/service/services/'
@@ -23,21 +23,24 @@ for ip in ipfile:
             as_name = rp['assigned_object']['instance']['id']
             
     else:
-        as_name= None
+        as_name= None  # bang None thi hien gi tren man hinh?
+
     # in instance id ra file text de lam dau vao lay service id
-    
     w.write(str(as_name)+"\n")
 
     if as_name != None:
         instance_id = {"instance_id":as_name}
-        rp2 = requests.request("GET", service_url , headers=headers, params=instance_id).json()['results'][0] # sao phai de results 0 moi chay dc
-        service = str(rp2['name'])
+        rp2 = requests.request("GET", service_url , headers=headers, params=instance_id).json()['results']
+        for id in rp2:
+            i=rp2.index(id) # moi id trong response se duoc danh index bat dau tu 0
+            rp2i = rp2[i]
+            service = str(rp2i['name'])
+            print ('instance: '+ ip.strip() + ' ' + 'co service la: '  + service)
+            s = 'instance: '+ ip.strip() + ' ' + 'co service la: '  + service + '\n'
+            w2.write(s)
     else:
         service = None
-
-    print (ip.strip() + ' ' + service)
-    s = ip.strip() + ' ' + service + '\n'
-    w2.write(s)
+ 
 w.close()
 w2.close()
 ipfile.close() 

@@ -21,17 +21,20 @@ for code in service_file:
     if rp['id'] !=None:
         service_id = rp['id']
     else:
-        service_id = None
+        service_id = None  # co hien thi gi tren man hinh khong?
 
     if service_id != None:
         service_id = {"service_id":service_id}
-        rp2 = requests.request("GET", ip_url , headers=headers, params=service_id).json()['results'][0] # sao phai de results 0 moi chay dc
-        ip = str(rp2['instance']['display'])
+        rp2 = requests.request("GET", ip_url , headers=headers, params=service_id).json()['results']
+        for id in rp2:
+            i=rp2.index(id) # moi id trong response se duoc danh index bat dau tu 0
+            rp2i = rp2[i]
+            ip = str(rp2i['instance']['name'])
+            print ('Ma dich vu: ' + code.strip() + ' ' + 'co IP la: '+ ip + '\n')
+            s = 'Ma dich vu: ' + code.strip() + ' ' + 'co IP la: '+ ip + '\n'
+            w.write(s)
     else:
         service = None
 
-    print ('Ma dich vu: ' + code.strip() + ' ' + 'co IP la: '+ ip + '\n')
-    s = 'Ma dich vu: ' + code.strip() + ' ' + 'co IP la: '+ ip + '\n'
-    w.write(s)
 w.close()
 service_file.close()
