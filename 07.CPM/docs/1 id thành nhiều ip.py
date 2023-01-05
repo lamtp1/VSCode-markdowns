@@ -16,7 +16,7 @@ instance_file =  open('instances_id.txt', 'r', encoding='UTF-8')
 # w = open('interface_id.txt', 'w', encoding='UTF-8')
 w2 = open('interface_to_ip.txt', 'w', encoding='UTF-8')
 for instance_id in instance_file:
-    qr_id = {"instance_id":instance_id}
+    qr_id = {"instance_id":instance_id.strip()}
     rp= requests.request("GET", url, headers=headers, params=qr_id).json()['results']
     for id in rp:       # tat ca cac interface trong response
         interface_id = str(id['id'])
