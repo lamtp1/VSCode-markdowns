@@ -6,7 +6,7 @@ from re import S
 import requests
 
 # lay ipv4 primary tu api instance
-ip_url = 'http://dcim.viettel.vn/api/service/service-users/'
+ip_url = 'http://dcim.viettel.vn/api/service/service-user/'
 service_url = 'http://dcim.viettel.vn/api/service/service/'
 
 temp_qr= {"limit":1}
@@ -18,10 +18,10 @@ headers = {
 # response = requests.request("GET", service_url, headers=headers, params=temp_qr)
 # ip_count = response.json()['count']
 
-limit= 250
+limit= 5
 offset= 0
 service_file = open("service_code.txt", "r+", encoding='UTF-8')
-while offset < 500 :
+while offset <= 20 :
     querystring = {"limit":limit, "offset": offset}
     response= requests.request("GET", service_url, headers=headers, params=querystring).json()['results']
     for code in response:
@@ -41,7 +41,7 @@ while offset < 500 :
     service_file = open("service_code.txt", "r+", encoding='UTF-8')
     w =  open('service_to_ip.txt', 'w', encoding='UTF-8')
 
-    for code in service_file:
+    for code in service_file:  # do khong phai service_name nao cx co service_code => tim bang name se day du hon
         qr_code = {"name":code}
         rp= requests.request("GET", service_url, headers=headers, params=qr_code).json()['results']
         for i in rp:
@@ -58,11 +58,11 @@ while offset < 500 :
                     i=rp2.index(id) # moi id trong response se duoc danh index bat dau tu 0
                     rp2i = rp2[i]
                     ip = str(rp2i['instance']['name'])
-                    print ('Dich vu: ' + code.strip() + ' ' + 'co IP la: '+ ip + '\n')
-                    s = 'Dich vu: ' + code.strip() + ' ' + 'co IP la: '+ ip + '\n'
+                    print (code.strip() + ' '+ ip + '\n')
+                    s = code.strip() + ' '+ ip + '\n'
                     w.write(s)
             else:
                 service = None
-        offset = offset + 250
+    offset = offset + 5
 w.close()
 service_file.close()

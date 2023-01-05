@@ -35,8 +35,8 @@ for ip in ipfile:
             i=rp2.index(id) # moi id trong response se duoc danh index bat dau tu 0
             rp2i = rp2[i]
             service = str(rp2i['name'])
-            print ('instance: '+ ip.strip() + ' ' + 'co service la: '  + service)
-            s = 'instance: '+ ip.strip() + ' ' + 'co service la: '  + service + '\n'
+            print (ip.strip() + ' ' + service)
+            s = ip.strip() + ' ' + service + '\n'
             w2.write(s)
     else:
         service = None

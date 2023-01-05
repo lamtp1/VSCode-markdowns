@@ -16,7 +16,7 @@ service_file = open("service_code.txt", "r")
 w =  open('service_to_ip.txt', 'w', encoding='UTF-8')
 
 for code in service_file:
-    qr_code = {"code":code}
+    qr_code = {"name":code}
     rp= requests.request("GET", service_url, headers=headers, params=qr_code).json()['results'][0]
     if rp['id'] !=None:
         service_id = rp['id']
