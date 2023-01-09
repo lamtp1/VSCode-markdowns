@@ -1,0 +1,18 @@
+//view file config: psql -U postgres -c 'SHOW config_file'
+//config file: /var/lib/pgsql/var/lib/postgres/data/postgresql.conf
+//log location: /var/lib/pgsql/var/lib/postgres/data/log   // chỉ hiển thị log khi vào database truy vấn...không có log khi chạy service lỗi
+
+//lenh de xem log o bat ky he thong nao
+select format('%s/%s', 
+    current_setting('data_directory'),
+    current_setting('log_directory'));
+
+//xem journal: journalctl -o verbose _PID=10856
+
+//init db: /usr/pgsql-15/bin/initdb -D 'var/lib/postgres/data' OR /usr/pgsql-15/bin/postgresql-15-setup initdb
+
+//start service:  /usr/pgsql-15/bin/pg_ctl -D var/lib/postgres/data -l logfile start
+MESSAGE="/var/lib/pgsql/15/data/" is missing or empty.
+
+lamtp1/0918273645asdf
+

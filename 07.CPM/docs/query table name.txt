@@ -1,0 +1,33 @@
+SELECT *
+  FROM information_schema.columns
+ WHERE table_schema = 'test'
+   AND table_name   = 'student'
+     ;
+	 
+	 
+CREATE TABLE student ( ten VARCHAR (50) , tuoi  VARCHAR (50), gioi_tinh VARCHAR (50), gpa float, xep_loai VARCHAR (50)  ); // tạo bảng mới
+CREATE TABLE server_ram ( create_time varchar (255), instance varchar(255), job varchar(255), monitor varchar(255), time varchar(255), value varchar(255), date_hour varchar(255), country varchar(255), source varchar(255) );
+	
+\copy hoc_sinh from '/var/lib/pgsql/student_csv.csv' delimiter ',' csv header;	//import dữ liệu vào bảng.
+\copy server_ram from '/root/server_ram.csv' delimiter ',' csv header;
+
+
+alter table hoc_sinh rename column ten to tuoi;                 //thay tên cột trong bảng.
+alter table companies alter column name type varchar(20);       //thay tên loại dữ liệu của cột.
+
+delete from hoc_sinh where ten_hs = 'huynp10';                 //xóa hàng trong bảng.
+
+
+insert into hoc_sinh (ten_hs, tuoi) values ('huynp10', '24'); //thêm hàng trong bảng.
+
+
+update hoc_sinh set id = 1 where ten_hs = 'huynp10';          //update dữ liệu trong b
+
+
+select xep_loai, count(*)  as tong_so from student group by xep_loai;   //group by xep loai hoc luc
+select  gioi_tinh, count(*) as so_luong_nam_nu from student where xep_loai='gioi'  group by gioi_tinh;  //so luong nam nu gioi
+select gioi_tinh, count(*) as so_luong_nam_va_nu, avg(gpa) as diem_trung_binh from student group by gioi_tinh;  //diem trung binh theo gioi tinh
+select xep_loai, count(*) as so_luong, avg(tuoi) as tuoi_trung_binh,  avg(gpa) as diem_trung_binh  from student group by xep_loai; //xep loai theo hoc luc,tuoi,diem tb.
+select s.student_id,  s.ten, s.tuoi, h.nhom_mau from student s inner join health_check h on s.student_id = h.student_id where s.student_id = 5;  //inner join 2 bang student va health check, dieu kien join la student_id, dk tim kiem la id=5
+
+alter table student alter column gpa type float using gpa::float;    //thay doi kieu du lieu 1 cot tu chu sang so 
