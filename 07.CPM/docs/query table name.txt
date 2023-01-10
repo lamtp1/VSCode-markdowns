@@ -73,10 +73,7 @@ select s.gioi_tinh, count(*) as tong_so_nam_nu, avg(s.gpa) as diem_trung_binh, a
 select h.nhom_mau, count(*) as so_luong, avg(s.gpa) as diem_trung_binh, avg(h.chieu_cao) as chieu_cao_trung_binh, avg(h.can_nang) as can_nang_trung_binh from student s inner join health_check h on s.student_id = h.student_id group by h.nhom_mau;
 
 ---------------sum as cot tinh so luong nam nu moi nhom mau------------------------------------------------------------------------------------------
-SELECT h.nhom_mau,  sum(case when s.gioi_tinh = 'Nam' then 1 else 0 end ) As so_nam, sum(case when s.gioi_tinh = 'Nu' then 1 else 0 end ) As so_nu 
-from student s inner join health_check h on s.student_id = h.student_id where h.nhom_mau = 'O' OR h.nhom_mau = 'A' OR h.nhom_mau = 'B' OR h.nhom_mau = 'AB' 
-OR h.nhom_mau = 'RH' group by h.nhom_mau;
-
+SELECT h.nhom_mau,  sum(case when s.gioi_tinh = 'Nam' then 1 else 0 end ) As so_nam, sum(case when s.gioi_tinh = 'Nu' then 1 else 0 end ) As so_nu from student s inner join health_check h on s.student_id = h.student_id  group by h.nhom_mau; 
 
 alter table student alter column gpa type float using gpa::float;    //thay doi kieu du lieu 1 cot tu chu sang so 
 
