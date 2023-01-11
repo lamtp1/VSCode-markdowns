@@ -1,0 +1,41 @@
+student_id,ten,tuoi,gioi_tinh,gpa,xep_loai
+1,Luc Hoang Anh,21,Nam,3.2,gioi
+2,Vo Dang Lan Anh,23,Nu,3.1,kha
+3,Le Trung Chanh,23,Nam,2.4,trung binh
+4,Tran Ngoc Dung,42,Nu,1.4,kem
+5,Tran Le My Duyen,23,Nu,3.55,gioi
+6,Tran My Duyen,22,Nu,3.56,gioi
+7,Vu Dinh Dai,12,Nam,3.5,gioi
+8,Huynh Tan Dat,23,Nam,2.5,kha
+9,Nguyen Thi Ngoc Han,11,Nu,2.5,kha
+10,Le Ngoc Hien,33,Nu,2.7,kha
+11,Nguyen Manh Hung,44,Nam,2.1,trung binh
+12,Nguyen Thanh Huy,5,Nam,2.7,kha
+13,Tran Hoang Khang,66,Nam,3.22,gioi
+14,Sy Chi Kiet,35,Nam,3.12,kha
+15,Nguyen Thi My Linh,63,Nu,3.6,xuat sac
+16,Cao Le Nhat Linh,32,Nu,2.64,kha
+17,Nguyen Thanh Long,32,Nam,2.74,kha
+18,Tran Nguyen Huyen My,22,Nu,2.98,kha
+19,Pham Trong Ngan,14,Nam,2.3,trung binh
+20,Hoang Nguyen Bao Ngoc,26,Nu,2.1,trung binh
+21,Tran Huu Nhan,21,Nam,2.6,kha
+22,Cao Thi Anh Nhu,76,Nu,3.99,xuat sac
+23,Nguyen Thi Quynh Nhu,33,Nu,1.2,kem
+24,Nguyen Hoang Phuc,22,Nam,2.4,trung binh
+25,Nguyen Van Phuc,15,Nam,2.6,kha
+26,Nguyen Duy Quang,28,Nam,2.8,kha
+27,Pham Huu Sang,32,Nam,3.14,kha
+28,Nguyen Hoang Anh Tai,31,Nam,2.4,trung binh
+29,Nguyen Thai Thanh,39,Nam,2.56,kha
+30,Lam Thi Kim Thi,17,Nu,2.78,kha
+31,Nguyen Tuan Thuan,18,Nam,2.51,kha
+32,Nguyen Thi Thanh Thuy,18,Nu,2.42,trung binh
+33,Pham Minh Thu,18,Nu,3.21,gioi
+34,Hoang Thu Trang,33,Nu,3.66,xuat sac
+35,Lu Thanh Tram,32,Nu,2.12,trung binh
+36,Bui Thi Thanh Truc,25,Nu,2.57,kha
+37,Nguyen Tran Anh Tuan,25,Nam,4,xuat sac
+38,Duong Quang Vinh,28,Nam,2.85,kha
+39,Le Thi Thuy Vy,26,Nu,3.15,kha
+40,Dao Phi Yen,29,Nu,3.2,gioi

@@ -78,3 +78,9 @@ SELECT h.nhom_mau,  sum(case when s.gioi_tinh = 'Nam' then 1 else 0 end ) As so_
 alter table student alter column gpa type float using gpa::float;    //thay doi kieu du lieu 1 cot tu chu sang so 
 
 alter table student alter column gpa type float using gpa::float;    //thay doi kieu du lieu 1 cot tu chu sang so 
+
+----------------chieu cao tb của nam/nu cua moi nhóm máu--------------------------------------
+SELECT h.nhom_mau,  avg(case when s.gioi_tinh = 'Nam' then h.chieu_cao end) As chieu_cao_tb_nam, avg(case when s.gioi_tinh = 'Nu' then h.chieu_cao end) As chieu_cao_tb_nu from student s inner join health_check h on s.student_id = h.student_id  group by h.nhom_mau;
+
+----------------select ra danh sach nam/nu mot nhom mau-----------------------
+select s.ten, h.chieu_cao from student s inner join health_check h on s.student_id = h.student_id where s.gioi_tinh = 'Nam'and h.nhom_mau='O';
