@@ -84,3 +84,5 @@ SELECT h.nhom_mau,  avg(case when s.gioi_tinh = 'Nam' then h.chieu_cao end) As c
 
 ----------------select ra danh sach nam/nu mot nhom mau-----------------------
 select s.ten, h.chieu_cao from student s inner join health_check h on s.student_id = h.student_id where s.gioi_tinh = 'Nam'and h.nhom_mau='O';
+
+delete from table;  //xoa tat ca data cua 1 bang
