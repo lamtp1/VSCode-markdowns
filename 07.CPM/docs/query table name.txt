@@ -86,3 +86,16 @@ SELECT h.nhom_mau,  avg(case when s.gioi_tinh = 'Nam' then h.chieu_cao end) As c
 select s.ten, h.chieu_cao from student s inner join health_check h on s.student_id = h.student_id where s.gioi_tinh = 'Nam'and h.nhom_mau='O';
 
 delete from table;  //xoa tat ca data cua 1 bang
+
+--------------------join 5 bang lay ra du lieu----------------------------------------
+select s.ten, h.nhom_mau, n.nguy_co, g.thuoc,g.gia_ca, c.cong_ty from student s inner join health_check h on s.student_id = h.student_id
+inner join nguy_co n on h.nhom_mau = n.nhom_mau inner join gia_ca g on g.benh_id = n.benh_id inner join company c on c.thuoc_id = g.thuoc_id 
+where s.student_id between 1 and 10 order by s.ten;
+
+
+--------------------tong tien thuoc cua moi gioi tinh cua moi nhom mau-------------------------
+select  h.nhom_mau, n.nguy_co, g.thuoc, sum(case when s.gioi_tinh='Nam' then 1 else 0 end) as so_nam, sum(case when s.gioi_tinh='Nu' then 1 else 0 end)
+ as so_nu, sum(case when s.gioi_tinh = 'Nam' then  g.gia_ca end) as tien_thuoc_nam, sum(case when s.gioi_tinh = 'Nu' then  g.gia_ca end) as tien_thuoc_nu 
+from student s inner join health_check h on s.student_id = h.student_id inner join nguy_co n on h.nhom_mau = n.nhom_mau 
+inner join gia_ca g on g.benh_id = n.benh_id inner join company c on c.thuoc_id = g.thuoc_id group by h.nhom_mau, n.nguy_co, g.thuoc;
+
