@@ -93,7 +93,7 @@ inner join nguy_co n on h.nhom_mau = n.nhom_mau inner join gia_ca g on g.benh_id
 where s.student_id between 1 and 10 order by s.ten;
 
 
---------------------tong tien thuoc cua moi gioi tinh cua moi nhom mau-------------------------
+--------------------tong tien thuoc moi gioi tinh cua moi nhom mau, nguy co, loai thuoc-------------------------
 select  h.nhom_mau, n.nguy_co, g.thuoc, sum(case when s.gioi_tinh='Nam' then 1 else 0 end) as so_nam, sum(case when s.gioi_tinh='Nu' then 1 else 0 end)
  as so_nu, sum(case when s.gioi_tinh = 'Nam' then  g.gia_ca end) as tien_thuoc_nam, sum(case when s.gioi_tinh = 'Nu' then  g.gia_ca end) as tien_thuoc_nu 
 from student s inner join health_check h on s.student_id = h.student_id inner join nguy_co n on h.nhom_mau = n.nhom_mau 
