@@ -11,10 +11,10 @@ conn = mysql.connector.connect(
 )
 
 # create a DataFrame with your data
-data = {'id': [5, 9, 7],
-        'name': ['Duynd21', 'Dungnd18', 'Anth79'], 
-        'age': [40, 35, 41], 
-        'gender': ['M', 'M', 'F']}
+data = {'Ma': [5, 9, 7],
+        'Ten': ['Duynd21', 'Dungnd18', 'Anth79'], 
+        'Tuoi': [20, 35, 21], 
+        'Gioi': ['M', 'M', 'M']}
 df = pd.DataFrame(data)
 
 # create a cursor object to execute SQL statements
@@ -23,7 +23,7 @@ cursor = conn.cursor()
 # loop through each row in the DataFrame and insert/update the MySQL table accordingly
 for index, row in df.iterrows():
     sql = "INSERT INTO people (id, name, age, gender) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE name = %s, age = %s, gender = %s"
-    val = (row['id'], row['name'], row['age'], row['gender'], row['name'], row['age'], row['gender'])
+    val = (row['Ma'], row['Ten'], row['Tuoi'], row['Gioi'], row['Ten'], row['Tuoi'], row['Gioi'])
     cursor.execute(sql, val)
 
 # commit the changes to the database

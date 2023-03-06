@@ -9,13 +9,14 @@ cursor = cnx.cursor()
 table_name = 'people'
 
 # insert the data into the table
-data = {'name': ['Duynd21', 'Linhnd47', 'Anth79'],
+data = {'id': [5, 9, 7],
+        'name': ['Duynd21', 'Linhnd47', 'Anth79'],
         'age': [25, 24, 26],
         'gender': ['M', 'M', 'M']}
 df = pd.DataFrame(data)
 
 # cho VALUES de cac bien trong phan data{}, ten khi khai bao data co the khac ten cot cua table
-insert_query = f"INSERT INTO {table_name} (name, age, gender) VALUES (%s, %s, %s)"
+insert_query = f"INSERT INTO {table_name} (id, name, age, gender) VALUES (%s, %s, %s, %s)"
 for row in df.itertuples(index=False):
     cursor.execute(insert_query, row)
 
