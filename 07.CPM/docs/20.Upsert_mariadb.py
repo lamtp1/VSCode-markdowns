@@ -20,7 +20,7 @@ df = pd.DataFrame(data)
 # create a cursor object to execute SQL statements
 cursor = conn.cursor()
 
-# loop through each row in the DataFrame and insert/update the MySQL table accordingly
+# loop through each row in the DataFrame and insert/update the MySQL table accordingly, data=val
 for index, row in df.iterrows():
     sql = "INSERT INTO people (id, name, age, gender) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE name = %s, age = %s, gender = %s"
     val = (row['Ma'], row['Ten'], row['Tuoi'], row['Gioi'], row['Ten'], row['Tuoi'], row['Gioi'])
