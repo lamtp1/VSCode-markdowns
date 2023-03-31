@@ -7,7 +7,7 @@ import openpyxl
 import mysql.connector
 
 
-service_url = 'http://10.255.58.203/api/service/service-managers/'
+LB_url = 'http://10.255.58.203/api/dcim/load-balancers/'
 
 temp_qr= {"limit":1}
 headers = {
@@ -16,7 +16,7 @@ headers = {
     'Cache-Control': "no-cache",
     }
 
-rp1 = requests.request("GET",service_url, headers=headers, params=temp_qr)
+rp1 = requests.request("GET",LB_url, headers=headers, params=temp_qr)
 ip_count = rp1.json()['count']
 
 cnx = mysql.connector.connect(user='root', password='123',
@@ -28,27 +28,35 @@ offset= 0
 
 while offset <  ip_count:
     qr_param = {"limit":limit, "offset": offset}
-    rp2 = requests.request("GET", service_url , headers=headers, params=qr_param).json()['results']
+    rp2 = requests.request("GET", LB_url , headers=headers, params=qr_param).json()['results']
     for id in rp2:
         # lay thong tin module (service_user_id va module_id,code,name,group code,name)
-        service_id = str(id['service']['id'])
-        Manager_ID = str(id['manager']['id'])
+        LB_ID = int(id['id'])
+        System = str(id['system'])
+        Code = str(id['code'])
+        Name = str(id['name'])
+        Site = str(id['site']['name'])
+        LB_type = str(id['lb_type']['label'])
         Manager_name = str(id['manager']['username'])
         Manager_email = str(id['manager']['email'])
-
+        Verify_status =  str(id['verify_status']['label'])
         # lay thong tin username va instance_id tu api service-users 
 
-        data =  {'Service_ID': [service_id],
-                'Manager_ID': [Manager_ID],
+        data =  {'LB_ID': [LB_ID],
+                'System': [System],
+                'Code': [Code],
+                'Name': [Name],
+                'Site': [Site],
+                'LB_type': [LB_type],
                 'Manager_name': [Manager_name],
-                'Manager_email': [Manager_email]}
+                'Manager_email': [Manager_email],
+                'Verify_status': [Verify_status]}
                 
         df = pd.DataFrame(data)           
         for index, row in df.iterrows():
-            sql = "INSERT INTO Service_Management (Service_ID, Manager_ID, Manager_name, Manager_email) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE  Manager_ID=%s, Manager_name=%s, Manager_email=%s"
-            val = (row['Service_ID'], row['Manager_ID'], row['Manager_name'], row['Manager_email'], row['Manager_ID'], row['Manager_name'], row['Manager_email'])
+            sql = "INSERT INTO LB (LB_ID, System, Code, Name, Site, LB_type, Manager_name, Manager_email, Verify_status) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s) ON DUPLICATE KEY UPDATE  System=%s, Code=%s, Name=%s, Site=%s, LB_type=%s, Manager_name=%s, Manager_email=%s, Verify_status=%s"
+            val = (row['LB_ID'], row['System'], row['Code'], row['Name'], row['Site'], row['LB_type'], row['Manager_name'], row['Manager_email'], row['Verify_status'], row['System'], row['Code'], row['Name'], row['Site'], row['LB_type'], row['Manager_name'], row['Manager_email'], row['Verify_status'])
             cursor.execute(sql, val)
-            
         df_string = df.to_string(index=False)
         print(df_string)
         # commit the changes to the database
@@ -59,3 +67,4 @@ while offset <  ip_count:
 # close the cursor and database connection
 cursor.close()
 cnx.close()
+            

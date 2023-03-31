@@ -7,7 +7,7 @@ import openpyxl
 import mysql.connector
 
 
-service_url = 'http://10.255.58.203/api/service/service-managers/'
+Storage_pool_url = 'http://10.255.58.203/api/dcim/storage-pools/'
 
 temp_qr= {"limit":1}
 headers = {
@@ -16,7 +16,7 @@ headers = {
     'Cache-Control': "no-cache",
     }
 
-rp1 = requests.request("GET",service_url, headers=headers, params=temp_qr)
+rp1 = requests.request("GET",Storage_pool_url, headers=headers, params=temp_qr)
 ip_count = rp1.json()['count']
 
 cnx = mysql.connector.connect(user='root', password='123',
@@ -28,27 +28,28 @@ offset= 0
 
 while offset <  ip_count:
     qr_param = {"limit":limit, "offset": offset}
-    rp2 = requests.request("GET", service_url , headers=headers, params=qr_param).json()['results']
+    rp2 = requests.request("GET", Storage_pool_url , headers=headers, params=qr_param).json()['results']
     for id in rp2:
         # lay thong tin module (service_user_id va module_id,code,name,group code,name)
-        service_id = str(id['service']['id'])
-        Manager_ID = str(id['manager']['id'])
-        Manager_name = str(id['manager']['username'])
-        Manager_email = str(id['manager']['email'])
+        Pool_ID = str(id['id'])
+        Storage_ID = str(id["storage"]["id"])
+        Total_space = str(id['total_space'])
+        Used_space = str(id['used_space'])
+        Free_space = str(id['free_space'])
 
         # lay thong tin username va instance_id tu api service-users 
 
-        data =  {'Service_ID': [service_id],
-                'Manager_ID': [Manager_ID],
-                'Manager_name': [Manager_name],
-                'Manager_email': [Manager_email]}
+        data =  {'Pool_ID': [Pool_ID],
+                'Storage_ID': [Storage_ID],
+                'Total_space': [Total_space],
+                'Used_space': [Used_space],
+                'Free_space': [Free_space]}
                 
         df = pd.DataFrame(data)           
         for index, row in df.iterrows():
-            sql = "INSERT INTO Service_Management (Service_ID, Manager_ID, Manager_name, Manager_email) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE  Manager_ID=%s, Manager_name=%s, Manager_email=%s"
-            val = (row['Service_ID'], row['Manager_ID'], row['Manager_name'], row['Manager_email'], row['Manager_ID'], row['Manager_name'], row['Manager_email'])
+            sql = "INSERT INTO Storage_Pool (Pool_ID, Storage_ID, Total_space, Used_space, Free_space) VALUES (%s, %s, %s, %s, %s) ON DUPLICATE KEY UPDATE  Storage_ID=%s, Total_space=%s, Used_space=%s, Free_space=%s"
+            val = (row['Pool_ID'], row['Storage_ID'], row['Total_space'], row['Used_space'], row['Free_space'],  row['Storage_ID'], row['Total_space'], row['Used_space'], row['Free_space'])
             cursor.execute(sql, val)
-            
         df_string = df.to_string(index=False)
         print(df_string)
         # commit the changes to the database
@@ -59,3 +60,4 @@ while offset <  ip_count:
 # close the cursor and database connection
 cursor.close()
 cnx.close()
+            

@@ -1,10 +1,19 @@
+import java.security.interfaces.ECKey;
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import javax.lang.model.element.Element;
 
 public class AppQLCB {
     public static void main(String[] args) {
         System.out.println("===CHUONG TRINH AppQLCB===");
         Scanner inScanner = new Scanner(System.in);
         QuanLyCanBo qLyCanBo = new QuanLyCanBo();
+
+        ArrayList<CanBo> arr = new ArrayList<>();
+        arr.add(new CanBo());
+        QuanLyCanBo quanLyCanBo1 = new QuanLyCanBo(arr);
+
         // Xây dựng Menu quản lý cán bộ
         String strNhap = "";
         do {
@@ -25,13 +34,39 @@ public class AppQLCB {
                     break;
                 case "2":
                     System.out.println("---Ban da chon IN thong tin can bo");
-                    qLyCanBo.inDanhSachCanBo();
+                    qLyCanBo.inDanhSachCanBo(qLyCanBo.getArrCanBo());
                     break;
                 case "3":
                     System.out.println("---Ban da chon Tim kiem theo ho ten");
+                    System.out.println("Nhap thong tin tim kiem: ");
+                    String strHoTen = inScanner.nextLine();
+                    ArrayList<CanBo> arrTimKiem = qLyCanBo.timKiemCanBo(strHoTen);
+                    if (arrTimKiem.size() > 0) {
+                        System.out.println("Danh sach can bo thoa man: ");
+                        qLyCanBo.inDanhSachCanBo(arrTimKiem);
+                    } else {
+                        System.out.println("Khong ton tai can bo thoa man dieu kien!!!");
+                    }
+
                     break;
                 case "4":
                     System.out.println("---Ban da chon Sa thai can bo");
+                    System.out.println("Nhap ma can bo can sa thai: ");
+                    String strMaCanBo = inScanner.nextLine();
+                    CanBo canBo = qLyCanBo.timCanBoTheoMa(strMaCanBo);
+                    if (canBo != null) {
+                        System.out.println("Thong tin can bo co ma la " + strMaCanBo + ": ");
+                        canBo.inCanBo();
+                        System.out.println("Ban co muon sa thai can bo nay khong?(y/n):");
+                        String strConfirm = inScanner.nextLine();
+                        if (strConfirm.equalsIgnoreCase("y")) {
+                            qLyCanBo.saThaiCanBo(canBo);
+                        }
+                        System.out.println("Danh sach can bo sau khi sa thai:");
+                        qLyCanBo.inDanhSachCanBo(qLyCanBo.getArrCanBo());
+                    } else {
+                        System.out.println("Khong ton tai can bo thoa man dieu kien!!!");
+                    }
                     break;
                 case "5":
                     System.out.println("---Cam on da su dung chuong trinh!");

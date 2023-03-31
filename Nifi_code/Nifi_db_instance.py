@@ -7,7 +7,7 @@ import openpyxl
 import mysql.connector
 
 
-service_url = 'http://10.255.58.203/api/service/service-managers/'
+db_instance_url = 'http://10.255.58.203/api/database/db-instances/'
 
 temp_qr= {"limit":1}
 headers = {
@@ -16,7 +16,7 @@ headers = {
     'Cache-Control': "no-cache",
     }
 
-rp1 = requests.request("GET",service_url, headers=headers, params=temp_qr)
+rp1 = requests.request("GET",db_instance_url, headers=headers, params=temp_qr)
 ip_count = rp1.json()['count']
 
 cnx = mysql.connector.connect(user='root', password='123',
@@ -28,27 +28,28 @@ offset= 0
 
 while offset <  ip_count:
     qr_param = {"limit":limit, "offset": offset}
-    rp2 = requests.request("GET", service_url , headers=headers, params=qr_param).json()['results']
+    rp2 = requests.request("GET", db_instance_url , headers=headers, params=qr_param).json()['results']
     for id in rp2:
         # lay thong tin module (service_user_id va module_id,code,name,group code,name)
-        service_id = str(id['service']['id'])
-        Manager_ID = str(id['manager']['id'])
-        Manager_name = str(id['manager']['username'])
-        Manager_email = str(id['manager']['email'])
-
+        DB_instance_ID = str(id['id'])
+        Database_ID = str(id['database']['id'])
+        Manager_name = str(id['database']['manager']['username'])
+        Manager_mail = str(id['database']['manager']['email'])
+        Instance_ID = str(id['instance']['id'])
         # lay thong tin username va instance_id tu api service-users 
 
-        data =  {'Service_ID': [service_id],
-                'Manager_ID': [Manager_ID],
+        data =  {'DB_instance_ID': [DB_instance_ID],
+                'Database_ID': [Database_ID],
                 'Manager_name': [Manager_name],
-                'Manager_email': [Manager_email]}
+                'Manager_email': [Manager_mail],
+                'Instance_ID': [Instance_ID]}
                 
         df = pd.DataFrame(data)           
         for index, row in df.iterrows():
-            sql = "INSERT INTO Service_Management (Service_ID, Manager_ID, Manager_name, Manager_email) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE  Manager_ID=%s, Manager_name=%s, Manager_email=%s"
-            val = (row['Service_ID'], row['Manager_ID'], row['Manager_name'], row['Manager_email'], row['Manager_ID'], row['Manager_name'], row['Manager_email'])
+            sql = "INSERT INTO Database_instance (DB_instance_ID, Database_ID, Manager_name, Manager_email, Instance_ID) VALUES (%s, %s, %s, %s, %s) ON DUPLICATE KEY UPDATE  Database_ID=%s, Manager_name=%s, Manager_email=%s, Instance_ID=%s"
+            val = (row['DB_instance_ID'], row['Database_ID'], row['Manager_name'], row['Manager_email'], row['Instance_ID'], row['Database_ID'], row['Manager_name'], row['Manager_email'], row['Instance_ID'])
             cursor.execute(sql, val)
-            
+        
         df_string = df.to_string(index=False)
         print(df_string)
         # commit the changes to the database
@@ -59,3 +60,4 @@ while offset <  ip_count:
 # close the cursor and database connection
 cursor.close()
 cnx.close()
+            

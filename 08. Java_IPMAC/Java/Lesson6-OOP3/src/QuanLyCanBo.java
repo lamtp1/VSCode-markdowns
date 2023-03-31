@@ -1,16 +1,25 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.lang.model.element.Element;
-import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
-
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-
 public class QuanLyCanBo {
-    ArrayList<CanBo> arrCanBo;
+    private ArrayList<CanBo> arrCanBo = new ArrayList<>();
 
     QuanLyCanBo() {
-        this.arrCanBo = new ArrayList<>();
+        if (this.arrCanBo == null) {
+            this.arrCanBo = new ArrayList<>();
+        }
+    }
+
+    QuanLyCanBo(ArrayList<CanBo> _arrCanBo) {
+        this.arrCanBo = _arrCanBo;
+    }
+
+    public void setArrCanBo(ArrayList<CanBo> _arrCanBo) {
+        this.arrCanBo = _arrCanBo;
+    }
+
+    public ArrayList<CanBo> getArrCanBo() {
+        return this.arrCanBo;
     }
 
     /* Thêm mới cán bộ */
@@ -83,8 +92,8 @@ public class QuanLyCanBo {
     }
 
     /* In cán bộ */
-    public void inDanhSachCanBo() {
-        for (CanBo cb : arrCanBo) {
+    public void inDanhSachCanBo(ArrayList<CanBo> arrCanBoIn) {
+        for (CanBo cb : arrCanBoIn) {
             if (cb instanceof CongNhan) {
                 CongNhan cn = (CongNhan) cb;
                 cn.inCanBo(); // gọi hàm incanbo của class CongNhan
@@ -100,4 +109,37 @@ public class QuanLyCanBo {
             }
         }
     }
+
+    /* Tìm kiếm cán bộ theo họ tên, không phân biệt hoa thường */
+    public ArrayList<CanBo> timKiemCanBo(String strHoTen) {
+        ArrayList<CanBo> arrTimKiem = new ArrayList<>();
+        for (CanBo canBo : this.arrCanBo) {
+            if (canBo.getHoTen().toUpperCase().contains(strHoTen.toUpperCase())) {
+                arrTimKiem.add(canBo);
+            }
+        }
+
+        return arrTimKiem;
+    }
+
+    /* Sa thải cán bộ */
+    /*--B1.Tìm kiếm cán bộ theo CCCD hoặc Mã */
+    public CanBo timCanBoTheoMa(String maCanBo) {
+        CanBo cb = null;
+        for (CanBo canBo : this.arrCanBo) {
+            if (canBo.getMaCanBo().equalsIgnoreCase(maCanBo)) {
+                cb = canBo;
+                break;
+            }
+        }
+        return cb;
+    }
+
+    /*--B2.Tìm kiếm xong thì mới sa thải, tức là remove cán bộ khởi arrCanBo */
+    public void saThaiCanBo(CanBo canBo) {
+        if (canBo != null) {
+            this.arrCanBo.remove(canBo);
+        }
+    }
+
 }
