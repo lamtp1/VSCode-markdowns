@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "08. Java_IPMAC/Java/Lesson7-OOP4/src",
+        "08. Java_IPMAC/Java/qlvb/src/main/java/com/springlab01/qlvb"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic"
+}
