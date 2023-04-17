@@ -65,6 +65,7 @@ kiểm tra lại file /var/log/td-agent/BCCS Payment.pos để xem đã đẩy l
 - Trường End_time: là thời điểm kết thúc tác động vào DLNC.
 
 ` * Lưu ý khi tạo index trên Log tập trung`
+
 `I.` Các bước cần làm phía đẩy log
 1. Kiểm tra môi trường trước khi cài đặt td-agent (HĐH)
 2. install agent theo HD v10 (gửi format log, log mẫu cho người ta cấu hình - file cem.txt)
@@ -90,3 +91,13 @@ kiểm tra lại file /var/log/td-agent/BCCS Payment.pos để xem đã đẩy l
 ![StartTime](../img/StartTime.png)
 
 ==> làm vậy sẽ mất log, đằng nào 1 tháng nữa cx bị delete nên sửa trước template và đợi log cũ bị rotate và ăn theo template mới
+
+` Chú ý:` Dấu phân cách trong dòng Log phải giống vs dấu phân cách trong Log format ở td-agent, ví dụ:
+Log format có phân cách là `|` thì dòng log cx thế. 
+
+![regex1](../img/regex1.png)
+
+3. TH log đã cấu hình đúng Start/End_time và đã tạo index_template đúng kiểu date nhưng chưa thấy Log
+==> kiểm tra file log của kafka-connect ở /u01/logtt/kafka-connect/log/kafka-connect.log. Ta sẽ thấy kafka-connect đang đẩy dở log của những ngày trước (những ngày mà định dạng chưa sửa nên sẽ không lưu trên elasticsearch). ==> Chỉ cần đợi cho đến ngày mà log đã đúng chuẩn là nó sẽ tự lên index.
+
+
