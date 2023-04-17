@@ -5,17 +5,119 @@
     <meta charset="ISO-8859-1">
     <title>Quản lý người dùng</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
 
 <body>
+    <div class="jumbotron text-center">
+        <h1>Ứng dụng quản lý văn bản, trình ký</h1>
+    </div>
 
-    <div class ="container my-2"
-        <h1>Danh sách người dùng</h1>
-    <div class="container my-2">
-        <h1>Danh sách người dùng</h1>
+    <div style="width: 100%;">
+        <div class="row" style="width: 100%;">
+            <div class="col-md-3 bg-info" style="height: 500px;">
+                <ul class="nav nav-pills">
+                    <li>
+                        <a th:href="@{/index}" class="nav-link text-white">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a th:href="@{/nguoidung/index}" class="nav-link text-white">
+                            Quản lý người dùng
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            Quản lý văn bản trình ký
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9 jumbotron" style="height: 500px;">
+
+                <h1>Danh sách người dùng</h1>
+                <a th:href="@{/nguoidung/create}" class="btn btn-primary btn-sm mb-3">Thêm mới</a>
+                <div class="table-responsive">
+                    <table class="table 
+                            table-bordered  
+                            table-striped 
+                            table-responsive-md">
+                        <thead>
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Mã người dùng</th>
+                                <th scope="col">Tên người dùng</th>
+                                <!-- <th>Mật khẩu</th> -->
+                                <th scope="col">Email</th>
+                                <th scope="col">Số điện thoại</th>
+                                <th scope="col">Giới tính</th>
+                                <th scope="col">Phòng ban</th>
+                                <th scope="col">Trạng thái</th>
+                                <th scope="col">Ngày nhập</th>
+                                <th scope="col">Ngày sửa</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="user, iStat:${arrUser}">
+                                <td th:text="${iStat.count}"></td>
+                                <td th:text="${user.getMaNguoiDung()}"></td>
+                                <td th:text="${user.getTenNguoiDung()}"></td>
+                                <!-- <td th:text="${user.getMatKhau()}"></td> -->
+                                <td th:text="${user.getEmail()}"></td>
+                                <td th:text="${user.getSoDienThoai()}"></td>
+                                <td>
+                                    <span th:if="${user.getGioiTinh() == 0}">
+                                        Nam
+                                    </span>
+                                    <span th:unless="${user.getGioiTinh() == 0}">
+                                        Nữ
+                                    </span>
+                                </td>
+                                <td th:text="${user.getMaPhongBan()}"></td>
+                                <!-- <td th:text="${user.getTrangThai()}"></td> -->
+                                <td>
+                                    <span th:if="${user.getTrangThai() == 0}">
+                                        Tạm khóa
+                                    </span>
+                                    <span th:unless="${user.getTrangThai() == 0}">
+                                        Hiệu lực
+                                    </span>
+                                </td>
+                                <td th:text="${user.getNgayNhap()}"></td>
+                                <td th:text="${user.getNgaySua()}"></td>
+                                <td>
+                                    <a th:href="@{/nguoidung/edit/{id}(id=${user.getMaNguoiDung()})}"
+                                        class="btn btn-primary">Sửa</a>
+                                    <a th:href="@{/nguoidung/delete/{id}(id=${user.getMaNguoiDung()})}"
+                                        class="btn btn-danger"
+                                        onclick="return confirm('Bạn chắc chắn muốn xóa không?')">
+                                        Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 </body>
 

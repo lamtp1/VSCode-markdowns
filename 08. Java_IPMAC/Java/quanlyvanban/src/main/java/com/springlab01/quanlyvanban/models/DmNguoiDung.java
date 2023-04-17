@@ -1,6 +1,7 @@
 package com.springlab01.quanlyvanban.models;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class DmNguoiDung {
     private String maNguoiDung;
@@ -15,6 +16,8 @@ public class DmNguoiDung {
     private LocalDateTime ngayNhap;
     private String maNguoiSua;
     private LocalDateTime ngaySua;
+    private Boolean blTrangThai;
+
 
     public DmNguoiDung() {
         
@@ -102,14 +105,39 @@ public class DmNguoiDung {
     public String getMaNguoiNhap() {
         return maNguoiNhap;
     }
-    public LocalDateTime getNgayNhap() {
-        return ngayNhap;
+    public String getNgayNhap() {
+        if (this.ngayNhap == null)
+        {
+            return "";
+        }
+        DateTimeFormatter fr =
+        DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        
+        return this.ngayNhap.format(fr);
     }
+    
     public String getMaNguoiSua() {
         return maNguoiSua;
     }
-    public LocalDateTime getNgaySua() {
-        return ngaySua;
+    public String getNgaySua() {
+        if (this.ngaySua == null)
+        {
+            return "";
+        }
+        DateTimeFormatter fr =
+        DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        
+        return this.ngaySua.format(fr);
     }
+
+    public void setBlTrangThai(Boolean blTrangThai) {
+        this.blTrangThai = blTrangThai;
+    }
+
+    public Boolean getBlTrangThai() {
+        return blTrangThai;
+    }
+
+    
 
 }

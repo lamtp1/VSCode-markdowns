@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Thêm mới người dùng</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+   
+    <div class="container" style="width:800px">
+        <h1>Cập nhật người dùng</h1>
+        <form action="#" th:action="@{/nguoidung/edit}" 
+        th:object="${nguoidung}"
+        method="POST">
+          
+            <div class="form-group">
+                <label for="maNguoiDung">Mã người dùng:</label>
+                <input 
+                    th:field="*{maNguoiDung}"
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Nhập mã người dùng" 
+                    required 
+                    readonly
+                />
+            </div>
+            <div class="form-group">
+                <label for="tenNguoiDung">Tên người dùng:</label>
+                <input 
+                    th:field="*{tenNguoiDung}"
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Nhập tên người dùng" 
+                    required 
+                    />
+            </div>
+            <div class="form-group">
+                <label for="matKhau">Mật khẩu:</label>
+                <input 
+                    th:field="*{matKhau}"
+                    type="password" 
+                    class="form-control" 
+                    placeholder="Nhập mật khẩu" 
+                    required 
+                    />
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input 
+                    th:field="*{email}"
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Nhập email" 
+                     
+                    />
+            </div>
+            <div class="form-group">
+                <label for="soDienThoai">Số điện thoại:</label>
+                <input 
+                    th:field="*{soDienThoai}"
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Nhập số điện thoại" 
+                     
+                    />
+            </div>
+            <div class="form-group">
+                <label for="gioiTinh">Giới tính:</label>
+                <select class="form-control"
+                    th:field="*{gioiTinh}"
+                >
+                    <option value="0">Nam</option>
+                    <option value="1">Nữ</option>
+                    <option value="2">Chưa xác định</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="maPhongBan">Phòng ban:</label>
+                <input 
+                    th:field="*{maPhongBan}"
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Nhập mã phòng ban" 
+                    />
+            </div>
+
+            <div class="form-check">
+                <input 
+                    th:field="*{blTrangThai}"
+                    type="checkbox" 
+                    class="form-check-input"
+                 />
+                <label class="form-check-label" for="trangThai">hiệu lực</label>
+            </div>
+            <br/>
+            <button type="submit" class="btn btn-primary col-2">Lưu lại</button>
+            <a th:href="@{/nguoidung/index}" class="btn btn-secondary col-2">Quay lại</a>
+            <br/>
+        </form>
+        <br/>
+
+        
+    </div>
+</body>
+
+</html>

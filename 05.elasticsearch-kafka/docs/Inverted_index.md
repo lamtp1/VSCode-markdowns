@@ -1,7 +1,9 @@
-<h1 style="Inverted Index">1.Index</h1>
+<h1 style="Inverted Index">1.Indexing</h1>
+
+Indexing là cách khiến tối ưu hiệu năng của Database bằng việc giảm số lần truy cập ổ đĩa (disk access) đến mức tối thiểu khi 1 câu query đang được xử lý. Nó là một kỹ thuật về cấu trúc dữ liệu (data structure technique) để nhanh chóng locate và truy cập data trong database
 
 
-
+- Index là một cấu trúc tồn tại độc lập với data trong table của DB
 <h1 style="Inverted Index">2.Elasticsearch inverted Index</h1>
 
 Trước hết, ở Elasticsearch, inverted index được coi là một cấu trúc dữ liệu trong Elasticsearch giúp tăng cường tốc độ tìm kiếm cho elasticsearch (full-text search).
