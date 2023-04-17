@@ -86,4 +86,7 @@ kiểm tra lại file /var/log/td-agent/BCCS Payment.pos để xem đã đẩy l
 ` * Trường start time quan trọng và phải chuẩn do là thời điểm tác động vào dữ liệu nhạy cảm, cần trường này để trace vết. `
 
 2. Log của 16 hệ thống VTT ban đầu để sai Start/End_time => phải lưu tạm dưới dạng text => cần sửa lại để tháng sau lưu định dạng mới. Hiện tại Log của VTT đang dùng policy riêng, sau 1 tháng là xóa log. Nếu index_template ban đầu lưu Start time dạng text sau đó sửa thành date => log mới lên sẽ KHÔNG ăn theo template mới này mà vẫn lưu dưới dạng cũ (Kể cả Datetime đúng chuẩn thì lên elastic Discover log vẫn là dạng text) trừ khi xóa index hiện tại đi thì mới ăn theo định dạng mới. 
+
+![StartTime](../img/StartTime.png)
+
 ==> làm vậy sẽ mất log, đằng nào 1 tháng nữa cx bị delete nên sửa trước template và đợi log cũ bị rotate và ăn theo template mới
