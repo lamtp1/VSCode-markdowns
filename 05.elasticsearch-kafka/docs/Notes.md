@@ -101,3 +101,24 @@ Log format có phân cách là `|` thì dòng log cx thế.
 ==> kiểm tra file log của kafka-connect ở /u01/logtt/kafka-connect/log/kafka-connect.log. Ta sẽ thấy kafka-connect đang đẩy dở log của những ngày trước (những ngày mà định dạng chưa sửa nên sẽ không lưu trên elasticsearch). ==> Chỉ cần đợi cho đến ngày mà log đã đúng chuẩn là nó sẽ tự lên index.
 
 
+` Các bước pull docker image từ server nội bộ viettel:`
+
+## Tips: `Tên Indice = tên topic viết thường` => tên indices ăn theo topic, tốt nhất để tránh nhầm thì tên của connect, template sẽ là từ tên topic viết thường/.
+
+- các service trong file docker-compose tương đương với zookeeper, kafka-connect, kafka => là các thành phần cần thiết để build lên app (log tập trung). Mỗi service = 1 container
+- để chạy docker-compose, trước hết phải build dockerfile để tạo ra image, sau đó từ các image này docker-compose sẽ chuyển thành các containers của service (es, kafka, zk) => Logtt. Việc build dockerfile có thể được định nghĩa trong docker-compose như hình dưới:
+
+![docker-compose](../img/docker-compose.png)  ![docker-compose](../img/docker-compose2.png)
+
+Ở hình trên thì dockerfile chứa thông tin về environment của zoo nằm ở thư mục ./zookeeper, thư mục này ngang hàng với file docker-compose nên sẽ có dấu ./ chỉ thư mục hiện tại.
+
+Ở hình dưới thì dockerfile nằm ngang hàng với docker-compose nên chỉ có ./
+
+Có 2 cách set biến môi trường, 1 là trong Dockerfile với biến `ENV`, 2 là trong docker-compose với key name `environment`:
+> In Docker, there are two main ways to set environment variables: using the ENV instruction in the Dockerfile or using the environment key in the docker-compose.yml file.
+
+> The main difference between the two is that the ENV instruction in the Dockerfile sets environment variables that will be available in the image at runtime, while the environment key in the docker-compose.yml file sets environment variables that will be available to the container when it runs.
+
+> In other words, the ENV instruction sets environment variables that are baked into the image, while the environment key sets environment variables that are specific to the container. The latter can be useful for setting container-specific configuration values or secrets that are not known at build time.
+
+> Another difference is that you can use the ENV instruction to set default values for environment variables, while the environment key in the docker-compose.yml file is used to override default values or set new ones.
