@@ -122,3 +122,23 @@ Có 2 cách set biến môi trường, 1 là trong Dockerfile với biến `ENV`
 > In other words, the ENV instruction sets environment variables that are baked into the image, while the environment key sets environment variables that are specific to the container. The latter can be useful for setting container-specific configuration values or secrets that are not known at build time.
 
 > Another difference is that you can use the ENV instruction to set default values for environment variables, while the environment key in the docker-compose.yml file is used to override default values or set new ones.
+
+- Trong file .env ở file ES.zip chỗ tích hợp Elasticsearch, có các thông tin về password của ES và thư mục chứa cert trong container, khả năng phải được mapping với thư mục ~/docker-compose/elasticsearch/_data/ như trong hướng dẫn. Password thì ở trong file này, nhưng thông tin user (elasticsearch) lại trong Dockerfile, là tên user chạy container ấy, nếu có 2 container chạy elasticsearch thì sẽ có 2 user elasticsearch.
+
+![env](../img/env.jpg)
+
+- Phần volumes trong docker compose: đường dẫn bên trái là của máy host, bên phải của container.
+
+![compose](../img/compose.jpg)
+
+- UID trong dockerfile bằng UID của user logtt = 1001
+
+![dockerfile](../img/dockerfile.jpg)
+
+=> Đây là đoạn map uid (kafka, elasticsearch, fluent...) chạy mỗi container với user id của user logtt. Lý do mount:
+
+![mont](../img/mount.png)
+
+![mont2](../img/mount2.png)
+
+![mount3](../img/mount3.jpg)
