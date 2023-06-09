@@ -142,3 +142,10 @@ Có 2 cách set biến môi trường, 1 là trong Dockerfile với biến `ENV`
 ![mont2](../img/mount2.png)
 
 ![mount3](../img/mount3.jpg)
+
+![mount4](../img/mount4.jpg.png)
+
+## `OS sẽ thấy user logtt chạy container ấy, không phải user elasticsearch, kafka, fluent trong container chạy container ấy. Kiểu như gán quyền chạy container cho user logtt`
+
+- Mỗi dòng log trong file log = 1 document dạng json với các cặp key-value
+-  indexing (hành động ghi các document vào shard)
