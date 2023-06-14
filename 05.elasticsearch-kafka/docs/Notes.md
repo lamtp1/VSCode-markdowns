@@ -149,3 +149,15 @@ Có 2 cách set biến môi trường, 1 là trong Dockerfile với biến `ENV`
 
 - Mỗi dòng log trong file log = 1 document dạng json với các cặp key-value
 -  indexing (hành động ghi các document vào shard)
+
+## Fix lỗi su sang user logtt, lỗi resource unavailable temporarily do vượt số process nproc:
+
+                vim /etc/security/limits.conf
+
+Vào file này sửa nproc và nofile của user logtt lên như hinh dưới hoặc để là unlimited
+
+![tem](../img/tem.jpg)
+
+đổi pass cho user logtt thì dùng lệnh:
+
+                passwd logtt
