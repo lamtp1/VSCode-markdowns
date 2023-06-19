@@ -68,7 +68,7 @@ kiểm tra lại file /var/log/td-agent/BCCS Payment.pos để xem đã đẩy l
 
 `I.` Các bước cần làm phía đẩy log
 1. Kiểm tra môi trường trước khi cài đặt td-agent (HĐH)
-2. install agent theo HD v10 (gửi format log, log mẫu cho người ta cấu hình - file cem.txt)
+2. install agent theo HD v10 (gửi format log, log mẫu cho người ta cấu hình - file cem.txt). `Lưu ý:` Mình chỉ gửi HD cài agent, không cần quan tâm bên muốn đẩy log làm gì, họ sẽ phải tự trao đổi với VHKT (để xin cấp quyền root truy cập...), nếu VHKT gặp khó khăn thì họ sẽ tự trao đổi với mình.
 3. Gửi log cho mình để xem đã đúng chuẩn (33 trường vs UD thường, 15 với log tổng đài, các trường Start/End_time chuẩn iso 8601)
 4. Làm PYC mở kết nối (đã lưu mail) tới log tt
 5. Báo lại khi log đã đúng chuẩn và gửi lên.
@@ -161,3 +161,7 @@ Vào file này sửa nproc và nofile của user logtt lên như hinh dưới ho
 đổi pass cho user logtt thì dùng lệnh:
 
                 passwd logtt
+
+## Lỗi log không đẩy được lên ở Windows Server:
+
+- KHả năng do thiếu quyền ghi ở thư mục chứa file log pos dẫn đến vị trí dòng Log hiện tại không được ghi vào file này, mà thiếu file này khả năng không đẩy được log (chưa chắc?)
