@@ -164,4 +164,71 @@ Vào file này sửa nproc và nofile của user logtt lên như hinh dưới ho
 
 ## Lỗi log không đẩy được lên ở Windows Server:
 
-- KHả năng do thiếu quyền ghi ở thư mục chứa file log pos dẫn đến vị trí dòng Log hiện tại không được ghi vào file này, mà thiếu file này khả năng không đẩy được log (chưa chắc?)
+- Sửa lại suộc của path đẩy file lên là OKE, do path linux khác windows và chú ý phải thêm định dạng file ở cuối (.txt, .log,...):
+
+![td-agent_conf](../img/file%20config%20cua%20tdagent%20windows.png)
+
+- Sau khi sửa file conf thì nhớ restart lại service, ở trong tab như hình dưới:
+
+![service](../img/fluentd_%20service_win.png)
+
+- Lập tức, file log pos mới sẽ được tạo ra:
+
+![log_pos_file](../img/log_pos_file.png)
+
+- Trong file log pos sẽ hiện lên các file log có cùng định dạng ActionLog*.txt
+
+![log_pos](../img/log_pos.png)
+
+## Các lưu ý khi dùng AAM:
+
+1. Template name $1 trong file script template ở /u01/logtt = @[TemplateName] - tên biến trên AAM
+
+![es_template](../img/es_template.jpg)
+![mop_template](../img/workflow.jpg)
+
+2. Phần chọn template ở mục create mop trên AAM = template được tạo ở mục workflow
+
+![mop_template](../img/mop_template.jpg)
+![workflow_temp](../img/workflow_template.jpg)
+
+3. Workflow là tập hợp các actions:
+
+![actions](../img/workflow_action.jpg)
+
+4. Mỗi action thực chất là một command với tên riêng.
+
+![aam](../img/aam.jpg)
+=> Muốn tạo template mới thì vào Manage flow work trên AAM. Còn muốn tạo command mới thì vào managae command.
+
+5. Để tác động trên AAM thì vào create MOP, chọn mop nào có status là editable (Tích hợp QLAN) và clone, sửa tên trong MOP thành tên của hệ thống muốn tích hợp. Sau đó lưu MOP, vào `Execute impact`, search tên MOP vừa tạo ở mục `Template`, di chuột vào cột `Action`, chọn `Execute DT`, double click vào ô đầu để chạy MOP => Waiting => Done.
+
+## Lệnh trace để check kết nối:
+
+                traceroute -nT -p 9092 10.254.138.3
+
+## Check kafka producer TPS:
+
+1. Vào kafka container:
+
+                docker exec -it [id_container] bash
+
+2. Vào /bin, check xem có kafka-producer-perf-test chưa:
+
+                ls | grep kafka-producer-perf
+
+3. Gõ lệnh (nhớ thay thông tin):
+
+                kafka-producer-perf-test --topic your_topic_name --num-records 100000 --record-size 1000 --throughput -1 --producer-props bootstrap.servers=your_kafka_broker_host:9092
+
+Kết quả sẽ như sau:
+
+                100000 records sent, 19261.240987 records/sec (18.38 MB/sec), 184.89 ms avg latency, 203.00 ms max latency.
+
+bao gồm TPS (records/s), độ trễ trung bình và tối đa cũng như thông lượng (MB/s). Thông số này cho ta biết tốc độ mà Kafka topic được xử lý, từ đó giúp ta đánh giá hiệu năng của kafka cluster. `--throughput -1 `option sets the maximum throughput, allowing the producer to send messages as fast as possible.
+
+VD với hệ thống thật:
+
+![tps](../img/tps.jpg)
+
+- SỰ KHÁC BIỆT SO VỚI `kafka-consumer-perf-test:` It simulates a workload where messages are consumed from a Kafka topic. It helps assess the performance and scalability of the Kafka consumer, including the processing rate and latency.
