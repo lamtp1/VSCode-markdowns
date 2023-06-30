@@ -232,3 +232,23 @@ VD với hệ thống thật:
 ![tps](../img/tps.jpg)
 
 - SỰ KHÁC BIỆT SO VỚI `kafka-consumer-perf-test:` It simulates a workload where messages are consumed from a Kafka topic. It helps assess the performance and scalability of the Kafka consumer, including the processing rate and latency.
+
+## Cách để đảm bảo 1 file log tự động sinh ra nhờ log rotate trong folder chứa log có permission 775 cũng sẽ có permission 775.
+
+The permissions of a newly created file during log rotation are determined by the umask settings and not directly inherited from the parent directory's permissions.
+
+The umask is a value that determines the default permissions for newly created files and directories. It subtracts the specified mask from the default permissions. By default, the umask value is usually set to 022, which means the write permission for the group and others is removed when creating new files.
+
+In the case of log rotation, if the umask is set to 022 and the parent directory has permissions 775, the newly created log file will have the default permissions of 644 (owner read/write, group read, others read).
+
+To ensure that the rotated log files have the desired permissions, you can modify the umask setting before performing the log rotation. For example, you can temporarily set the umask to 000, which would result in the newly created log files having permissions of 775. After the log rotation is complete, you can revert the umask to its original value if desired.
+
+Please note that the exact configuration and behavior may vary depending on the specific log rotation mechanism or tool being used. It's always recommended to review the documentation or settings of the log rotation tool you're using to understand its behavior and how permissions are managed during log rotation.
+
+                sudo vi /etc/profile
+
+tìm dòng có đoạn umask, sửa theo cái mình muốn
+
+                umask 000
+
+Sau khi sửa xong thì save file, thoát ra login lại hoặc restart lại system sẽ kích hoạt effect.
