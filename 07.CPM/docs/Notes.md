@@ -15,3 +15,10 @@ trong đó, `vt_admin@nifi02 ` là account và tên domain hoặc ip định cop
         unzip python_1606.zip
 
 Chọn A nếu muốn ghi đè.
+
+## Lệnh để chmod tất cả các file trong folder:
+
+                find /path/to/folder -type f -exec chmod 775 {} \;
+
+Trong đó:
+ The {} is a placeholder that represents each file found, and \; indicates the end of the -exec command
