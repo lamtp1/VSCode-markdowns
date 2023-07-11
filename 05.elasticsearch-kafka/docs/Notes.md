@@ -252,3 +252,33 @@ tìm dòng có đoạn umask, sửa theo cái mình muốn
                 umask 000
 
 Sau khi sửa xong thì save file, thoát ra login lại hoặc restart lại system sẽ kích hoạt effect.
+
+## Hardening server để có repo
+
+B1: Vào con 241 (10.60.129.241)
+
+B2: Vào thư mục chứa file inventory, file này chứa thông tin các server định hardening và account password của server mình định cấu hình, ở đây là root/123456:
+
+                cd /u01/labratory/tungns17/auto_new
+
+![inventory_file](../img/inventory_file.jpg)
+
+Sửa thông tin trong file thành server mình định hardening
+
+B3: chạy lệnh sau để hardening:
+
+                ansible-playbook -i inventory_logtt auto_hardening.yml
+
+Ghi chú:
+Sau khi hardening sẽ không thể ssh từ 241 đến account root của logtt nữa mà phải qua vt_admin, file chứa thông tin password của vt_admin nằm ở thư mục `/u01/labratory/autoscripts/Hardening_Centos7.x`, đường dẫn này lại nằm trong file auto_hardening.yml nằm ở `/u01/labratory/tungns17/auto_new`:
+
+![auto_hardening](../img/auto_hardening.jpg)
+
+Trong thư mục Hardening_Centos7.x sẽ có script `Fix_Security_Baseline.sh` chứa thông tin về pass vt_admin, mặc định là `2`.
+
+![Fix](../img/vt_admin_pass_file.jpg)
+
+Nội dung bên trong file này:
+
+![Fix2](../img/vt_admin_pass.jpg)
+
