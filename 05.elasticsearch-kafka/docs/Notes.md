@@ -282,3 +282,16 @@ Nội dung bên trong file này:
 
 ![Fix2](../img/vt_admin_pass.jpg)
 
+### Lệnh thay user cho toàn bộ thư mục:
+
+                chown -R logtt:logtt /01/logtt
+
+### Khai báo repo cho docker:
+
+                vim /etc/docker/daemon.json
+
+Copy nội dung của file daemon.json của server đang chạy khác
+
+### Reload lại daemon để docker.service được load về vị trí ban đầu, nếu không thì khi start sẽ bị lỗi failed to start, unit docker.service not found.
+
+                systemctl daemon-reload

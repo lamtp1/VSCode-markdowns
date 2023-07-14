@@ -65,3 +65,8 @@ Nếu kết quả như hình dưới là ổn:
         systemctl stop firewalld
 
         
+
+## Build docker với tên docker-compose.yml khác:
+
+                docker-compose -f docker-compose_2.yml up -d --build
+
