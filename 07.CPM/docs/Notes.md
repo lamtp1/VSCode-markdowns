@@ -48,3 +48,10 @@ Thêm user mình muốn thêm vào đoạn dưới:
 Sau đó nhớ save file và restart lại docker.
 
 `Lưu ý:` user thực hiện các lệnh trên là user root 
+
+### Copy tất cả file từ một directory đến 1 directory khác:
+
+                shopt -s dotglob
+                cp source_folder/* /path/to/destination_folder/
+
+Lệnh `shopt -s dotglob` sẽ copy được cả file ẩn (bắt đầu bằng dấu chấm: .env)

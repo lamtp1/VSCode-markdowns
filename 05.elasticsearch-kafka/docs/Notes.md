@@ -339,3 +339,40 @@ Sau khi build xong có thể tự do dùng user root trong container và su root
 
 ![traceroute_pkg](../img/traceroute_pkg.png)
 
+## Build 2 services 1 file compose hay 1 service 1 file:
+
+- Việc build 2 servies 1 file compose hay 1 service 1 file như nhau bởi nó vẫn ăn theo image đầu tiên được tạo (tất cả images khi dùng lệnh docker images chỉ khác tên repo nhưng cùng image ID), giải thích được tại sao ports trong container thứ 2 bao gồm cả các port trong container đầu. 
+
+### Lệnh xóa toàn bộ container:
+
+                docker container prune -f
+
+### Lệnh xóa toàn bộ images:
+
+                docker image prune -af
+
+### Lệnh nén cả file hidden:
+
+                zip -r archive_name.zip .*
+
+### Lệnh add user vào sudoers group:
+
+                usermod -aG wheel newuser
+
+### Lệnh remove các package docker
+
+                sudo yum remove 'docker*'
+
+### Lệnh cài docker (chưa có compose)
+
+                sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+### Nếu gặp lỗi file not found khi dang tien hanh mount thì do container vẫn đang dùng volume setting cũ nên không hiểu được đường dẫn mới, phải xóa volume cũ đi:
+
+                docker-compose down -v
+
+### Add user vào docker-group để không dùng quyền sudo (copy trong con 170)
+
+### Xem tất cả service và các port mà service đang listen:
+
+                lsof -i -P -n | grep LISTEN
