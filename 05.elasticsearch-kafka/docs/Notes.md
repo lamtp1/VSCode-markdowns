@@ -376,3 +376,19 @@ Sau khi build xong có thể tự do dùng user root trong container và su root
 ### Xem tất cả service và các port mà service đang listen:
 
                 lsof -i -P -n | grep LISTEN
+
+### Lệnh check rule của iptables để biết rule docker đã đc thêm chưa:
+
+                iptables -L -n -t nat
+                
+### Lệnh xem rule đã có trong iptables chưa:
+
+                ip -nL | grep 172
+
+### Gặp lỗi này khi build docker: `"Bash script – "/bin/bash^M: bad interpreter: No such file or directory"` thì làm như sau:
+
+                # cài dos2unix
+                yum install -y dos2unix
+
+                # chuyển file sh từ dạng dos -> unix 
+                dos2unix kafka-server-start.sh
