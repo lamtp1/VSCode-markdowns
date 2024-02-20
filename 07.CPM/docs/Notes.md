@@ -55,3 +55,16 @@ Sau đó nhớ save file và restart lại docker.
                 cp source_folder/* /path/to/destination_folder/
 
 Lệnh `shopt -s dotglob` sẽ copy được cả file ẩn (bắt đầu bằng dấu chấm: .env)
+
+Từ IP compute --> IP instance --> ID instance --> Device ID --> IP MGT, serial
+
+## Cài phần mềm không cần user vanphong:
+
+1. Rút dây mạng (nếu không muốn bị ăn ticket ATTT)
+2. Cắm usb cài win mini vào và vào BIOS (F9, F12) rồi chọn usb.
+3. Tìm kiếm từ khóa password
+4. Sau đó chọn ổ cài win (ổ C), và bỏ tích phần `disabled user` và tích `clear user password` để unlock user bởi bình thường kaspersky sẽ quét toàn bộ user trong ổ (trong đó có admin) và disabled tất, trừ user lamtp1, vì vậy trước đấy phải ngắt dây mạng để kaspersky không quét. clear password để khi đăng nhập bằng user admin thì sẽ không bị hỏi password.
+5. Restart máy. 
+6. Login lại bằng user admin: nhập `.\administrator`
+7. Cài đặt phần mềm muốn cài.
+8. Switch user lamtp1 và tận hưởng. Nếu vẫn chưa cắm dây mạng thì vẫn switch sang user admin mà không cần nhập password được

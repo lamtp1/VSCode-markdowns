@@ -392,3 +392,8 @@ Sau khi build xong có thể tự do dùng user root trong container và su root
 
                 # chuyển file sh từ dạng dos -> unix 
                 dos2unix kafka-server-start.sh
+
+### Các node trong cluster ko nói chuyện vs nhau:
+
+- Thêm trường transport.port (=port của transport.pulish.port)
+- Sau khi thêm vẫn ko được thì xóa data và log cũ rồi docker-compose up -d lại
