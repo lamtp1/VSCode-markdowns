@@ -408,3 +408,47 @@ Sau khi build xong có thể tự do dùng user root trong container và su root
 + Kafka: dùng 2 file jks là kafka.server.keystore.jks và kafka.server.truststore.jks, 2 file này cũng được tạo từ các lệnh openssl như trên, được lưu ở /u03/logtt/kafka/secrets/ ngoài 2 file jks thì còn có các file .kafka_keystore_password và .kafka_truststore_password lưu mk. Thư mục secrets được mapping với thư mục /etc/kafka/secrets trong container. Trong file compose của kafka, phần LOCATION của truststore và keystore, không cần phải điền full path, chỉ cần tên file jks. Còn trong LOCATOIN của compose của kafka-connect, vẫn điền full path: /etc/kafka-connect/secrets/.jks.
 + Kafka-connect: do kafka-connect vừa phải giao tiếp với kafka, vừa elasticsearch nên ngoài 2 file jks cho  connect kể trên, cần khai báo thêm cert của kafka. Cần khai báo thông tin truststore và keystore của kafka server (kafka.server.keystore.jks và kafka.server.truststore.jks) và truststore lẫn keystore cho phần CONSUMER (kafka.connect.truststore.jks và kafka.connect.keystore.jks). Ngoài ra đường dẫn của các file này cũng để full trong docker-compose (/etc/kafka-connect/secret/...) chứ không để mỗi tên file như của kafka được, chưa rõ tại sao. Tất cả được lưu ở /u03/logtt/kafka-connect/secrets (6 file jks: 2 file của consumer, 2 file của connector, 2 file của kafka broker), và được mapping với /etc/kafka-connect/secrets trong container.
 + Td-agent: cần 3 file để hình thành kết nối ssl là: CA_cert.pem, client-cert.pem và client-key.pem. 3 file này tính chất cũng giống các file jks nhưng phải để dạng pem do td-agent không hiểu định dạng jks. Khai báo thông tin đường dẫn các file này trong file fluent.conf để chạy. (vd xem fluent.conf của logtt_177)
+
+### Chạy background process (exporter elasticsearch https://grafana.com/oss/prometheus/exporters/elasticsearch-exporter/?tab=installation)
+
+1. chạy process theo hd trên link 
+2. ấn Ctrl+Z để stop process và cho nó chạy ngầm
+3. gõ `bg` để rusume process chạy ngầm
+
+### Tổng hợp lỗi log tt
+
+1. Lỗi kafka broker unavailable trong log kafka-connect:
+
+Do iptables
+`Giải pháp:` thêm rule iptables + restart docker và iptables.
+
+2. Lỗi FORBIDDEN index (sau khi shrink index thì ko đẩy log lên được)
+
+`Giải pháp:` để thời gian chuyển về warm node thành đủ 1 tháng, nếu ít hơn thì kafka-connect sẽ ko biết tên indice để đẩy log lên elasticsearch. Mỗi tháng có 1 indice là do trong cấu hình connector quy định - phần timestamp yyyy.MM, tên của 1 indice trên elasticsearch là tên TOPIC+TIMESTAMP, khi lên es thì tất cả sẽ được viết thường. Mà trong index_tempalte có trường index_pattern quy định tất cả những gì bắt đầu bằng `es.centralizedlog.*` sẽ được gom vào 1 indice, nhưng template chỉ áp dụng đối với lần đẩy log lên  es đầu tiên, bắt đầu từ lần 2 sẽ ăn theo template của indice có sẵn. Nếu indice có sẵn này tên shrink... thì connector sẽ ko biết đẩy log vào đâu do khác tên. Phải đợi tháng sau khi mà indice tháng mới lên ES thì mới đẩy ko lỗi.
+
+3. Lỗi đẩy log được 1 lần sau đấy thì tasks của connect failed:
+
+Do user kafka-connect thiếu quyền.
+`Giải pháp:` cấp quyền cho user này như con log cũ.
+
+4. Lỗi đẩy log bị lặp:
+
+Do kafka broker trên 181 bị lỗi, log không đẩy đủ lên topic ==> fluentd phải retry đẩy log liên tục, VD: 10 dòng log được đẩy vào 5 partition của topic lamtp1, đẩy được 8 dòng vào 4 partition đầu, còn 2 dòng nữa ko đẩy được --> fail --> tiếp tục đẩy lại 10 dòng vào topic lamtp1 --> lại đẩy được 8 dòng như trước vào 4 partition cuối --> fail, đẩy lại 10 dòng lần nữa. Lúc này tổng số dòng trong topic là 16. Fluent sẽ retry đến khi nào cả 10 dòng đẩy được vào topic. 
+`Giải pháp:`  Sửa kafka broker để ko bị lỗi.
+
+5. Tasks của connect không chia đều ra các worker:
+
+`Giải pháp:` restart docker
+
+### Cách khiến kafka-connector state thành FAILED:
+
+`- Mục đích:` Để test file script tự xóa và tạo mới connector.
+`- Connector failed và có thể fix được bằng cách tạo mới khi nào:` 
+        + khi kết nối tới kafka-connect tới elasticsearch bị lỗi, (lỗi uplink ở switch leaf).
+        + node elasticsearch down (những node có trong file config của connector)
+`- Cách làm:` 
+1. Tạo một kafka-connector với số node elasticsearch trong config là >=2 thuộc 2 server khác nhau (chỉ ghi 1 node hoặc 2 node cùng 1 server sẽ lỗi)
+2. Sau khi tạo thành công connector, down các node elasticsearch đã khai trong config
+3. Đẩy thử log vào Kafka Topic khai trong file config
+4. Check status sẽ thấy lỗi FAILED dù sau khi đẩy log đã up lại node elasticsearch.
+--> Phải xóa đi và tạo lại connector mới hết lỗi
