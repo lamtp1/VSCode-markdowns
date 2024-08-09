@@ -1,0 +1,1 @@
+Pool Name|SAN IP|Capacity|IP check

@@ -1,0 +1,29 @@
+SELECT * from Cloud_HA where date(insert_time) = curdate();
+SELECT * from `Database`  where date(insert_time) = curdate();
+SELECT * from Database_instance  where date(insert_time) = curdate();
+SELECT * from Device  where date(insert_time) = curdate();
+SELECT * from Instance  where date(insert_time) = curdate();
+SELECT * from LB  where date(insert_time) = curdate();
+SELECT * from LB_pool  where date(insert_time) = curdate();
+SELECT * from LB_pool_member  where date(insert_time) = curdate();
+SELECT * from Module  where date(insert_time) = curdate();
+SELECT * from Server_capacity  where date(insert_time) = curdate();
+SELECT * from Netbi.Service  where date(insert_time) = curdate();
+SELECT * from Service_Management  where date(insert_time) = curdate();
+SELECT * from Service_Owner  where date(insert_time) = curdate();
+SELECT * from Netbi.Service_Switch  where date(insert_time) = curdate();
+SELECT * from Service_User  where date(insert_time) = curdate();
+SELECT * from Storage  where date(insert_time) = curdate();
+SELECT * from Storage_Pool  where date(insert_time) = curdate();
+SELECT * from Storage_System  where date(insert_time) = curdate();
+SELECT * from Switch  where date(insert_time) = curdate();
+SELECT * from Switch_DiractMAC  where date(insert_time) = curdate();
+SELECT * from VIP_Endpoint   where date(insert_time) = curdate();
+SELECT * from Volume   where date(insert_time) = curdate();
+
+-- Xac dinh DB tu instance
+select d.Name as Database_name, i.Instance_name, i.Primary_ip4 
+from Database_instance di  
+join  Instance i on di.Instance_ID = i.Instance_ID 
+join `Database` d on di.Database_ID = d.Database_ID 
+where di.insert_time like '2024-02-23%' and i.insert_time like '2024-02-23%' and d.insert_time like '2024-02-23%'

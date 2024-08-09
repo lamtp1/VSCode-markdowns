@@ -1,0 +1,1362 @@
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 657,
+            "instance": 6843,
+            "metadata_info": {
+                "CPU": {
+                    "rows": [
+                        {
+                            "upgrade": "Socket LGA3647-1",
+                            "version": "Intel(R) Xeon(R) Platinum 8160 CPU @ 2.10GHz",
+                            "max_speed": "4000 MHz",
+                            "core_count": "24",
+                            "core_enabled": "24",
+                            "thread_count": "48",
+                            "socket_designation": "CPU1"
+                        },
+                        {
+                            "upgrade": "Socket LGA3647-1",
+                            "version": "Intel(R) Xeon(R) Platinum 8160 CPU @ 2.10GHz",
+                            "max_speed": "4000 MHz",
+                            "core_count": "24",
+                            "core_enabled": "24",
+                            "thread_count": "48",
+                            "socket_designation": "CPU2"
+                        }
+                    ],
+                    "attributes": [
+                        "version",
+                        "max_speed",
+                        "socket_designation",
+                        "upgrade",
+                        "core_count",
+                        "core_enabled",
+                        "thread_count"
+                    ]
+                },
+                "HBA": {
+                    "rows": [],
+                    "attributes": [
+                        "fc_host",
+                        "port_name",
+                        "node_name",
+                        "port_state",
+                        "speed",
+                        "supported_speeds",
+                        "symbolic_name"
+                    ]
+                },
+                "HDD": {
+                    "rows": [
+                        {
+                            "wwn": "N/A",
+                            "name": "dm-0",
+                            "size": "30.00 GB",
+                            "model": null,
+                            "sectors": "62914560",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "dm-1",
+                            "size": "80.00 GB",
+                            "model": null,
+                            "sectors": "167772160",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "dm-2",
+                            "size": "30.00 GB",
+                            "model": null,
+                            "sectors": "62914560",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "dm-3",
+                            "size": "155.08 GB",
+                            "model": null,
+                            "sectors": "325230592",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "dm-4",
+                            "size": "400.00 GB",
+                            "model": null,
+                            "sectors": "838860800",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "dm-5",
+                            "size": "20.00 GB",
+                            "model": null,
+                            "sectors": "41943040",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "dm-6",
+                            "size": "30.00 GB",
+                            "model": null,
+                            "sectors": "62914560",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "md0",
+                            "size": "745.08 GB",
+                            "model": null,
+                            "sectors": "1562556416",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "nvme0n1",
+                            "size": "745.21 GB",
+                            "model": "UCSC-NVMEHW-H800",
+                            "sectors": "1562824368",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "nvme1n1",
+                            "size": "745.21 GB",
+                            "model": "UCSC-NVMEHW-H800",
+                            "sectors": "1562824368",
+                            "sectorsize": "512"
+                        },
+                        {
+                            "wwn": "N/A",
+                            "name": "sda",
+                            "size": "59.47 GB",
+                            "model": "Hypervisor",
+                            "sectors": "124727295",
+                            "sectorsize": "512"
+                        }
+                    ],
+                    "attributes": [
+                        "name",
+                        "model",
+                        "size",
+                        "wwn",
+                        "sectors",
+                        "sectorsize"
+                    ]
+                },
+                "RAM": {
+                    "rows": [
+                        {
+                            "size": "32 GB",
+                            "type": "DDR4",
+                            "speed": "2666 MT/s",
+                            "locator": "DIMM_A1",
+                            "form_factor": "DIMM",
+                            "part_number": "M393A4K40CB2-CTD",
+                            "bank_locator": "NODE 1",
+                            "manufacturer": "0xCE00",
+                            "serial_number": "395BDAD0"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_A2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 1",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "32 GB",
+                            "type": "DDR4",
+                            "speed": "2666 MT/s",
+                            "locator": "DIMM_B1",
+                            "form_factor": "DIMM",
+                            "part_number": "M393A4K40CB2-CTD",
+                            "bank_locator": "NODE 1",
+                            "manufacturer": "0xCE00",
+                            "serial_number": "395BDBF6"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_B2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 1",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_C1",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 1",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_C2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 1",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "32 GB",
+                            "type": "DDR4",
+                            "speed": "2666 MT/s",
+                            "locator": "DIMM_D1",
+                            "form_factor": "DIMM",
+                            "part_number": "M393A4K40CB2-CTD",
+                            "bank_locator": "NODE 2",
+                            "manufacturer": "0xCE00",
+                            "serial_number": "395BD9D4"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_D2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 2",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "32 GB",
+                            "type": "DDR4",
+                            "speed": "2666 MT/s",
+                            "locator": "DIMM_E1",
+                            "form_factor": "DIMM",
+                            "part_number": "HMA84GR7AFR4N-VK",
+                            "bank_locator": "NODE 2",
+                            "manufacturer": "0xAD00",
+                            "serial_number": "82447087"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_E2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 2",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_F1",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 2",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_F2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 2",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "32 GB",
+                            "type": "DDR4",
+                            "speed": "2666 MT/s",
+                            "locator": "DIMM_G1",
+                            "form_factor": "DIMM",
+                            "part_number": "M393A4K40CB2-CTD",
+                            "bank_locator": "NODE 3",
+                            "manufacturer": "0xCE00",
+                            "serial_number": "395BD9D3"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_G2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 3",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "32 GB",
+                            "type": "DDR4",
+                            "speed": "2666 MT/s",
+                            "locator": "DIMM_H1",
+                            "form_factor": "DIMM",
+                            "part_number": "M393A4K40CB2-CTD",
+                            "bank_locator": "NODE 3",
+                            "manufacturer": "0xCE00",
+                            "serial_number": "395BDB07"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_H2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 3",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_J1",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 3",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_J2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 3",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "32 GB",
+                            "type": "DDR4",
+                            "speed": "2666 MT/s",
+                            "locator": "DIMM_K1",
+                            "form_factor": "DIMM",
+                            "part_number": "M393A4K40CB2-CTD",
+                            "bank_locator": "NODE 4",
+                            "manufacturer": "0xCE00",
+                            "serial_number": "395BDA01"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_K2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 4",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "32 GB",
+                            "type": "DDR4",
+                            "speed": "2666 MT/s",
+                            "locator": "DIMM_L1",
+                            "form_factor": "DIMM",
+                            "part_number": "M393A4K40CB2-CTD",
+                            "bank_locator": "NODE 4",
+                            "manufacturer": "0xCE00",
+                            "serial_number": "395BD9C9"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_L2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 4",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_M1",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 4",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        },
+                        {
+                            "size": "No Module Installed",
+                            "type": "Unknown",
+                            "speed": "Unknown",
+                            "locator": "DIMM_M2",
+                            "form_factor": "Unknown",
+                            "part_number": "NO DIMM",
+                            "bank_locator": "NODE 4",
+                            "manufacturer": "NO DIMM",
+                            "serial_number": "NO DIMM"
+                        }
+                    ],
+                    "attributes": [
+                        "locator",
+                        "size",
+                        "bank_locator",
+                        "form_factor",
+                        "type",
+                        "speed",
+                        "manufacturer",
+                        "serial_number",
+                        "part_number"
+                    ]
+                },
+                "USER": {
+                    "rows": [
+                        {
+                            "gid": "0",
+                            "uid": "0",
+                            "shell": "/bin/bash",
+                            "username": "root",
+                            "user_info": "root",
+                            "home_directory": "/root",
+                            "password_status": "PS",
+                            "last_password_change": "2020-11-04",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "1",
+                            "uid": "1",
+                            "shell": "/sbin/nologin",
+                            "username": "bin",
+                            "user_info": "bin",
+                            "home_directory": "/bin",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "2",
+                            "uid": "2",
+                            "shell": "/sbin/nologin",
+                            "username": "daemon",
+                            "user_info": "daemon",
+                            "home_directory": "/sbin",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "4",
+                            "uid": "3",
+                            "shell": "/sbin/nologin",
+                            "username": "adm",
+                            "user_info": "adm",
+                            "home_directory": "/var/adm",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "7",
+                            "uid": "4",
+                            "shell": "/sbin/nologin",
+                            "username": "lp",
+                            "user_info": "lp",
+                            "home_directory": "/var/spool/lpd",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "0",
+                            "uid": "5",
+                            "shell": "/bin/sync",
+                            "username": "sync",
+                            "user_info": "sync",
+                            "home_directory": "/sbin",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "0",
+                            "uid": "6",
+                            "shell": "/sbin/shutdown",
+                            "username": "shutdown",
+                            "user_info": "shutdown",
+                            "home_directory": "/sbin",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "0",
+                            "uid": "7",
+                            "shell": "/sbin/halt",
+                            "username": "halt",
+                            "user_info": "halt",
+                            "home_directory": "/sbin",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "14",
+                            "uid": "10",
+                            "shell": "/sbin/nologin",
+                            "username": "uucp",
+                            "user_info": "Uucp user",
+                            "home_directory": "/var/spool/uucp",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "0",
+                            "uid": "11",
+                            "shell": "/sbin/nologin",
+                            "username": "operator",
+                            "user_info": "operator",
+                            "home_directory": "/root",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "50",
+                            "uid": "14",
+                            "shell": "/sbin/nologin",
+                            "username": "ftp",
+                            "user_info": "FTP User",
+                            "home_directory": "/var/ftp",
+                            "password_status": "LK",
+                            "last_password_change": "2018-06-21",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "16",
+                            "uid": "16",
+                            "shell": "/sbin/nologin",
+                            "username": "oprofile",
+                            "user_info": "Special user account to be used by OProfile",
+                            "home_directory": "/var/lib/oprofile",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "32",
+                            "uid": "32",
+                            "shell": "/sbin/nologin",
+                            "username": "rpc",
+                            "user_info": "Rpcbind Daemon",
+                            "home_directory": "/var/lib/rpcbind",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "38",
+                            "uid": "38",
+                            "shell": "/sbin/nologin",
+                            "username": "ntp",
+                            "user_info": "",
+                            "home_directory": "/etc/ntp",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "42",
+                            "uid": "42",
+                            "shell": "/sbin/nologin",
+                            "username": "gdm",
+                            "user_info": "",
+                            "home_directory": "/var/lib/gdm",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "59",
+                            "uid": "59",
+                            "shell": "/sbin/nologin",
+                            "username": "tss",
+                            "user_info": "Account used by the trousers package to sandbox the tcsd daemon",
+                            "home_directory": "/dev/null",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "70",
+                            "uid": "70",
+                            "shell": "/sbin/nologin",
+                            "username": "avahi",
+                            "user_info": "Avahi mDNS/DNS-SD Stack",
+                            "home_directory": "/var/run/avahi-daemon",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "72",
+                            "uid": "72",
+                            "shell": "/sbin/nologin",
+                            "username": "tcpdump",
+                            "user_info": "",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "74",
+                            "uid": "74",
+                            "shell": "/sbin/nologin",
+                            "username": "sshd",
+                            "user_info": "Privilege-separated SSH",
+                            "home_directory": "/var/empty/sshd",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "75",
+                            "uid": "75",
+                            "shell": "/sbin/nologin",
+                            "username": "radvd",
+                            "user_info": "radvd user",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "77",
+                            "uid": "77",
+                            "shell": "/sbin/nologin",
+                            "username": "arpwatch",
+                            "user_info": "",
+                            "home_directory": "/var/lib/arpwatch",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "81",
+                            "uid": "81",
+                            "shell": "/sbin/nologin",
+                            "username": "dbus",
+                            "user_info": "System message bus",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "89",
+                            "uid": "89",
+                            "shell": "/sbin/nologin",
+                            "username": "postfix",
+                            "user_info": "",
+                            "home_directory": "/var/spool/postfix",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "92",
+                            "uid": "92",
+                            "shell": "/sbin/nologin",
+                            "username": "quagga",
+                            "user_info": "Quagga routing suite",
+                            "home_directory": "/var/run/quagga",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "95",
+                            "uid": "95",
+                            "shell": "/sbin/nologin",
+                            "username": "radiusd",
+                            "user_info": "radiusd user",
+                            "home_directory": "/var/lib/radiusd",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "98",
+                            "uid": "98",
+                            "shell": "/sbin/nologin",
+                            "username": "ident",
+                            "user_info": "",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "107",
+                            "uid": "107",
+                            "shell": "/sbin/nologin",
+                            "username": "qemu",
+                            "user_info": "qemu user",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "113",
+                            "uid": "113",
+                            "shell": "/sbin/nologin",
+                            "username": "usbmuxd",
+                            "user_info": "usbmuxd user",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "155",
+                            "uid": "155",
+                            "shell": "/sbin/nologin",
+                            "username": "stap-server",
+                            "user_info": "Systemtap Compile Server",
+                            "home_directory": "/var/lib/stap-server",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "171",
+                            "uid": "171",
+                            "shell": "/sbin/nologin",
+                            "username": "pulse",
+                            "user_info": "PulseAudio System Daemon",
+                            "home_directory": "/var/run/pulse",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "172",
+                            "uid": "172",
+                            "shell": "/sbin/nologin",
+                            "username": "rtkit",
+                            "user_info": "RealtimeKit",
+                            "home_directory": "/proc",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "173",
+                            "uid": "173",
+                            "shell": "/sbin/nologin",
+                            "username": "abrt",
+                            "user_info": "",
+                            "home_directory": "/etc/abrt",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "177",
+                            "uid": "177",
+                            "shell": "/sbin/nologin",
+                            "username": "dhcpd",
+                            "user_info": "DHCP server",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "192",
+                            "uid": "192",
+                            "shell": "/sbin/nologin",
+                            "username": "systemd-network",
+                            "user_info": "systemd Network Management",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "978",
+                            "uid": "985",
+                            "shell": "/sbin/nologin",
+                            "username": "uuidd",
+                            "user_info": "UUID generator helper daemon",
+                            "home_directory": "/var/lib/libuuid",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "979",
+                            "uid": "986",
+                            "shell": "/sbin/nologin",
+                            "username": "tang",
+                            "user_info": "Tang Network Presence Daemon user",
+                            "home_directory": "/var/cache/tang",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "980",
+                            "uid": "987",
+                            "shell": "/sbin/nologin",
+                            "username": "insights",
+                            "user_info": "Red Hat Insights",
+                            "home_directory": "/var/lib/insights",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "981",
+                            "uid": "988",
+                            "shell": "/sbin/nologin",
+                            "username": "gnome-initial-setup",
+                            "user_info": "",
+                            "home_directory": "/run/gnome-initial-setup/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "982",
+                            "uid": "989",
+                            "shell": "/sbin/nologin",
+                            "username": "pcp",
+                            "user_info": "Performance Co-Pilot",
+                            "home_directory": "/var/lib/pcp",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "985",
+                            "uid": "990",
+                            "shell": "/sbin/nologin",
+                            "username": "saned",
+                            "user_info": "SANE scanner daemon user",
+                            "home_directory": "/usr/share/sane",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "986",
+                            "uid": "991",
+                            "shell": "/sbin/nologin",
+                            "username": "setroubleshoot",
+                            "user_info": "",
+                            "home_directory": "/var/lib/setroubleshoot",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "987",
+                            "uid": "992",
+                            "shell": "/sbin/nologin",
+                            "username": "chrony",
+                            "user_info": "",
+                            "home_directory": "/var/lib/chrony",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "988",
+                            "uid": "993",
+                            "shell": "/sbin/nologin",
+                            "username": "gluster",
+                            "user_info": "GlusterFS daemons",
+                            "home_directory": "/run/gluster",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "76",
+                            "uid": "994",
+                            "shell": "/sbin/nologin",
+                            "username": "saslauth",
+                            "user_info": "Saslauthd user",
+                            "home_directory": "/run/saslauthd",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "990",
+                            "uid": "995",
+                            "shell": "/sbin/nologin",
+                            "username": "geoclue",
+                            "user_info": "User for geoclue",
+                            "home_directory": "/var/lib/geoclue",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "992",
+                            "uid": "996",
+                            "shell": "/sbin/nologin",
+                            "username": "colord",
+                            "user_info": "User for colord",
+                            "home_directory": "/var/lib/colord",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "995",
+                            "uid": "997",
+                            "shell": "/sbin/nologin",
+                            "username": "libstoragemgmt",
+                            "user_info": "daemon account for libstoragemgmt",
+                            "home_directory": "/var/run/lsm",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "996",
+                            "uid": "998",
+                            "shell": "/sbin/nologin",
+                            "username": "unbound",
+                            "user_info": "Unbound DNS resolver",
+                            "home_directory": "/etc/unbound",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "998",
+                            "uid": "999",
+                            "shell": "/sbin/nologin",
+                            "username": "polkitd",
+                            "user_info": "User for polkitd",
+                            "home_directory": "/",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        },
+                        {
+                            "gid": "1001",
+                            "uid": "1001",
+                            "shell": "/bin/bash",
+                            "username": "ocu",
+                            "user_info": "ocu",
+                            "home_directory": "/home/ocu",
+                            "password_status": "PS",
+                            "last_password_change": "2020-11-09",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "1002",
+                            "uid": "1002",
+                            "shell": "/bin/bash",
+                            "username": "oam",
+                            "user_info": "oam",
+                            "home_directory": "/home/oam",
+                            "password_status": "PS",
+                            "last_password_change": "2020-11-09",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "1003",
+                            "uid": "1003",
+                            "shell": "/bin/bash",
+                            "username": "aerospike",
+                            "user_info": "aerospike",
+                            "home_directory": "/home/aerospike",
+                            "password_status": "PS",
+                            "last_password_change": "2020-11-09",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "1004",
+                            "uid": "1004",
+                            "shell": "/bin/bash",
+                            "username": "vt_admin",
+                            "user_info": "",
+                            "home_directory": "/home/vt_admin",
+                            "password_status": "PS",
+                            "last_password_change": "2019-09-03",
+                            "maximum_password_age": "99999"
+                        },
+                        {
+                            "gid": "65534",
+                            "uid": "65534",
+                            "shell": "/sbin/nologin",
+                            "username": "nfsnobody",
+                            "user_info": "Anonymous NFS User",
+                            "home_directory": "/var/lib/nfs",
+                            "password_status": "LK",
+                            "last_password_change": "2019-01-15",
+                            "maximum_password_age": "-1"
+                        }
+                    ],
+                    "attributes": [
+                        "username",
+                        "password_status",
+                        "last_password_change",
+                        "maximum_password_age",
+                        "uid",
+                        "gid",
+                        "user_info",
+                        "home_directory",
+                        "shell"
+                    ]
+                },
+                "GENERAL": {
+                    "rows": [
+                        {
+                            "fqdn": "SPGM01DRAERO11",
+                            "kernel": "3.10.0-1062.el7.x86_64",
+                            "system": "Linux",
+                            "hostname": "SPGM01DRAERO11",
+                            "lastboot": "N/A",
+                            "nodename": "SPGM01DRAERO11",
+                            "bios_date": "11/02/2018",
+                            "os_family": "RedHat",
+                            "memfree_mb": 116421,
+                            "memtotal_mb": 257397,
+                            "architecture": "x86_64",
+                            "bios_version": "B200M5.4.0.2a.0.1102181538",
+                            "distribution": "RedHat",
+                            "memory_slots": "6",
+                            "product_name": "UCSB-B200-M5",
+                            "swaptotal_mb": 81919,
+                            "system_vendor": "Cisco Systems Inc",
+                            "product_serial": "FCH224071DF",
+                            "uptime_seconds": 124077943,
+                            "userspace_bits": "64",
+                            "processor_cores": 24,
+                            "processor_count": 2,
+                            "processor_vcpus": 96,
+                            "maximum_capacity": "2304 GB",
+                            "virtualization_role": "host",
+                            "virtualization_type": "kvm",
+                            "distribution_release": "Maipo",
+                            "distribution_version": "7.6",
+                            "distribution_file_path": "/etc/redhat-release",
+                            "userspace_architecture": "x86_64",
+                            "distribution_file_variety": "RedHat",
+                            "distribution_major_version": "7",
+                            "processor_threads_per_core": 2
+                        }
+                    ],
+                    "attributes": [
+                        "architecture",
+                        "bios_date",
+                        "bios_version",
+                        "distribution",
+                        "distribution_file_path",
+                        "distribution_file_variety",
+                        "distribution_major_version",
+                        "distribution_release",
+                        "distribution_version",
+                        "fqdn",
+                        "hostname",
+                        "kernel",
+                        "lastboot",
+                        "maximum_capacity",
+                        "memfree_mb",
+                        "memory_slots",
+                        "memtotal_mb",
+                        "nodename",
+                        "os_family",
+                        "processor_cores",
+                        "processor_count",
+                        "processor_threads_per_core",
+                        "processor_vcpus",
+                        "product_name",
+                        "product_serial",
+                        "swaptotal_mb",
+                        "system",
+                        "system_vendor",
+                        "uptime_seconds",
+                        "userspace_architecture",
+                        "userspace_bits",
+                        "virtualization_role",
+                        "virtualization_type"
+                    ]
+                },
+                "ETHERNET": {
+                    "rows": [
+                        {
+                            "mtu": 1500,
+                            "name": "bond0",
+                            "type": "bonding",
+                            "active": true,
+                            "macaddress": "00:25:b5:63:00:70",
+                            "ip_addresses": "10.255.26.114"
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "bond1",
+                            "type": "bonding",
+                            "active": true,
+                            "macaddress": "00:25:b5:60:00:7a",
+                            "ip_addresses": "10.49.9.114"
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "bond2",
+                            "type": "bonding",
+                            "active": true,
+                            "macaddress": "00:25:b5:64:00:66",
+                            "ip_addresses": "1.1.5.114"
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp103s0f0",
+                            "type": "ether",
+                            "active": false,
+                            "macaddress": "00:25:b5:62:00:71",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp103s0f1",
+                            "type": "ether",
+                            "active": true,
+                            "macaddress": "00:25:b5:64:00:66",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp103s0f2",
+                            "type": "ether",
+                            "active": false,
+                            "macaddress": "00:25:b5:65:00:71",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp220s0f0",
+                            "type": "ether",
+                            "active": true,
+                            "macaddress": "00:25:b5:63:00:70",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp220s0f1",
+                            "type": "ether",
+                            "active": true,
+                            "macaddress": "00:25:b5:60:00:7a",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp220s0f2",
+                            "type": "ether",
+                            "active": false,
+                            "macaddress": "00:25:b5:61:00:70",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp225s0f0",
+                            "type": "ether",
+                            "active": false,
+                            "macaddress": "00:25:b5:62:00:70",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp225s0f1",
+                            "type": "ether",
+                            "active": true,
+                            "macaddress": "00:25:b5:64:00:66",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp225s0f2",
+                            "type": "ether",
+                            "active": false,
+                            "macaddress": "00:25:b5:65:00:70",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp98s0f0",
+                            "type": "ether",
+                            "active": true,
+                            "macaddress": "00:25:b5:63:00:70",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp98s0f1",
+                            "type": "ether",
+                            "active": true,
+                            "macaddress": "00:25:b5:60:00:7a",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 1500,
+                            "name": "enp98s0f2",
+                            "type": "ether",
+                            "active": false,
+                            "macaddress": "00:25:b5:61:00:71",
+                            "ip_addresses": ""
+                        },
+                        {
+                            "mtu": 65536,
+                            "name": "lo",
+                            "type": "loopback",
+                            "active": true,
+                            "macaddress": "N/A",
+                            "ip_addresses": "127.0.0.1"
+                        }
+                    ],
+                    "attributes": [
+                        "ip_addresses",
+                        "name",
+                        "active",
+                        "macaddress",
+                        "mtu",
+                        "type"
+                    ]
+                },
+                "MOUNT_POINT": {
+                    "rows": [
+                        {
+                            "uuid": "d36fd9c8-009b-403b-b375-f90bbb967e03",
+                            "mount": "/home",
+                            "device": "/dev/mapper/vg_ocpt02vocs-lv_home",
+                            "fstype": "xfs",
+                            "options": "rw,relatime,attr2,inode64,noquota",
+                            "size_total": "20.0 GiB",
+                            "size_available": "19.4 GiB"
+                        },
+                        {
+                            "uuid": "94228294-ae14-43a7-9b04-995fb67ee58b",
+                            "mount": "/",
+                            "device": "/dev/mapper/vg_ocpt02vocs-lv_root",
+                            "fstype": "xfs",
+                            "options": "rw,relatime,attr2,inode64,noquota",
+                            "size_total": "30.0 GiB",
+                            "size_available": "29.5 GiB"
+                        },
+                        {
+                            "uuid": "64fd84e9-5336-4fed-add4-014bbd23905f",
+                            "mount": "/u01",
+                            "device": "/dev/mapper/vg_ocpt02vocs-lv_u01",
+                            "fstype": "xfs",
+                            "options": "rw,relatime,attr2,inode64,noquota",
+                            "size_total": "399.8 GiB",
+                            "size_available": "191.6 GiB"
+                        },
+                        {
+                            "uuid": "7f8f70db-a66a-4fa4-a6a8-243cd87167b4",
+                            "mount": "/usr",
+                            "device": "/dev/mapper/vg_ocpt02vocs-lv_usr",
+                            "fstype": "xfs",
+                            "options": "rw,relatime,attr2,inode64,noquota",
+                            "size_total": "30.0 GiB",
+                            "size_available": "24.3 GiB"
+                        },
+                        {
+                            "uuid": "eedc4429-5002-4f72-9571-729ac9239d45",
+                            "mount": "/var",
+                            "device": "/dev/mapper/vg_ocpt02vocs-lv_var",
+                            "fstype": "xfs",
+                            "options": "rw,relatime,attr2,inode64,noquota",
+                            "size_total": "30.0 GiB",
+                            "size_available": "12.5 GiB"
+                        },
+                        {
+                            "uuid": "50307ccd-f6ad-4697-93fd-8efce33c85be",
+                            "mount": "/u02",
+                            "device": "/dev/mapper/vg_ocpt02vocs-u02",
+                            "fstype": "xfs",
+                            "options": "rw,relatime,attr2,inode64,noquota",
+                            "size_total": "155.0 GiB",
+                            "size_available": "154.5 GiB"
+                        },
+                        {
+                            "uuid": "89b8d732-a506-4693-812e-a510ad34f587",
+                            "mount": "/boot",
+                            "device": "/dev/sda1",
+                            "fstype": "xfs",
+                            "options": "rw,relatime,attr2,inode64,noquota",
+                            "size_total": "508.7 MiB",
+                            "size_available": "297.3 MiB"
+                        }
+                    ],
+                    "attributes": [
+                        "device",
+                        "size_total",
+                        "size_available",
+                        "mount",
+                        "fstype",
+                        "uuid",
+                        "options"
+                    ]
+                },
+                "PRIMARY IPv4": {
+                    "rows": [
+                        {
+                            "mtu": 1500,
+                            "type": "bonding",
+                            "alias": "bond0",
+                            "address": "10.255.26.114",
+                            "gateway": "10.255.26.1",
+                            "netmask": "255.255.255.128",
+                            "network": "10.255.26.0",
+                            "broadcast": "10.255.26.127",
+                            "interface": "bond0",
+                            "macaddress": "00:25:b5:63:00:70"
+                        }
+                    ],
+                    "attributes": [
+                        "address",
+                        "alias",
+                        "broadcast",
+                        "gateway",
+                        "interface",
+                        "macaddress",
+                        "mtu",
+                        "netmask",
+                        "network",
+                        "type"
+                    ]
+                }
+            }
+        }
+    ]
+}

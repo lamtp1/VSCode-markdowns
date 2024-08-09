@@ -1,0 +1,62 @@
+
+
+1. hypervisor_vcpus_total{aggregate=~".*"}
+
+hypervisor_vcpus_total{aggregate="KGM_HHT_Ceph_2022_Q1_01", arch="x86_64", cloud="RegionOne", hypervisor_hostname="hht4f-vtn02-com-10254203142", instance="10.254.203.2:9183", job="cloud-hht-openstack-exporter-legacy", monitor="cloud-hht", nova_service_status="enabled"}
+
+
+
+hypervisor_hostname: hostname compute
+monitor: cụm cloud
+80: total VCPU của compute
+
+
+2. hypervisor_vcpus_used{aggregate=~".*"}
+
+hypervisor_vcpus_used{aggregate="3PAR-T6C01-Broadwell", arch="x86_64", cloud="RegionOne", hypervisor_hostname="hlc6fcom-40", instance="10.255.77.3:9183", job="openstack_exporter", monitor="openstack-hlct6", nova_service_status="enabled"}
+68
+
+
+hypervisor_hostname: hostname compute
+monitor: cụm cloud
+68: đã cấp phát VCPU của compute
+
+
+3. thôn tin VM trên 1 compute
+libvirt_cpu_stats_max_cpu{instance=~"10.254.170.100.*"}
+
+libvirt_cpu_stats_max_cpu{domain="instance-000019e0", instance="10.254.170.100:9177", instance_name="DB-10.254.156.52-new", job="cisco-2020-libvirt-exporter", monitor="cisco-2020", project_name="ChuyenDoi-CSDL", uuid="d5031ee5-f977-4c13-b63a-c2d7c591a1f6"}
+26
+
+instance_name: tên VM hostname
+
+instance: IP compute
+
+uuid: uid của VM
+
+4. Lấy thông tin vCPU của VM ở bước 3
+
+libvirt_cpu_stats_max_cpu{ uuid="d5031ee5-f977-4c13-b63a-c2d7c591a1f6"}
+
+
+5. Lấy thông tin RAM của Vm trong bước 3
+libvirt_mem_stats_actual{ uuid="d5031ee5-f977-4c13-b63a-c2d7c591a1f6"}/1024/1024  (donv vi GiB)
+
+
+{domain="instance-000019e0", instance="10.254.170.100:9177", instance_name="DB-10.254.156.52-new", job="cisco-2020-libvirt-exporter", monitor="cisco-2020", project_name="ChuyenDoi-CSDL", uuid="d5031ee5-f977-4c13-b63a-c2d7c591a1f6"}
+
+
+6. Tỉ lệ overcommit 1 compute
+openstack_allocation_ratio{cloud=~".*",resource="vcpu"}
+
+openstack_allocation_ratio{cloud="RegionOne", instance="10.207.183.1:9183", job="cloud-vtt-openstack-exporter-legacy", monitor="cloud-vtt", resource="vcpu"}
+4
+
+monitor: cụm cloud
+4: tỉ lệ overcommit
+
+7. Total dung lượng Pool Ceph: (ceph_pool_stored{pool_id="9"} + ceph_pool_max_avail{pool_id="9"})
+8. Dung lượng Ceph đã cấp phát: sum(cinder_volumes{type="VTNET_Ceph_174_HDD"}) thay bằng sum(cinder_volumes{type=~".*Ceph.*"}) lấy bất cứ tên gì có Ceph
+9. Dung lượng Ceph thực dùng: ceph_pool_stored_raw{pool_id="9"} /3 thay bằng ceph_pool_stored_raw{pool_id=~".*"} /3
+10. Dung lượng Ceph thực dùng có thể thay bằng: ceph_pool_stored{pool_id="9"}
+

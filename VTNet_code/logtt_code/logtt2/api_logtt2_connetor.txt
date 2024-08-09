@@ -1,0 +1,7 @@
+https://10.254.139.177:8083/connectors/es-centralizedlog-tinhvv2-connector/status
+https://10.254.139.177:8083/connectors/es-centralizedlog-tinhvv3-connector/status
+https://10.254.139.177:8083/connectors/es-centralizedlog-tinhvv4-connector/status
+https://10.254.139.177:8083/connectors/es-centralizedlog-lamtp1-connector/status
+https://10.254.139.177:8083/connectors/es-centralizedlog-lamtp2-connector/status
+https://10.254.139.177:8083/connectors/es-centralizedlog-lamtp3-connector/status
+https://10.254.139.177:8083/connectors/es-centralizedlog-linhnd47-connector/status

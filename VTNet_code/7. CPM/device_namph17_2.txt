@@ -1,0 +1,154 @@
+11186|10.60.102.185/32|Vật lý|HLC|Floor 5.1|PowerEdge R730|VTN_TTVHKTTC_HTCNTTVT|phonglh6
+11187|10.60.102.186/32|Vật lý|HLC|Floor 5.1|PowerEdge R730|VTN_TTVHKTTC_HTCNTTVT|phonglh6
+11188|10.60.102.187/32|Vật lý|HLC|Floor 5.1|PowerEdge R730|VDS_KCQ_KTDV|cuongth2
+11677|10.60.135.142/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11678|10.60.135.143/24|CLOUD|HLC|{'id': 155, 'url': 'http://dcim.viettel.vn/api/dcim/locations/155/', 'display': 'Floor 5.1', 'name': 'Floor 5.1', 'slug': 'floor-5-1', '_depth': 0}|ProLiant BL460c Gen9|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11666|10.60.135.131/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11667|10.60.135.132/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11668|10.60.135.133/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11669|10.60.135.134/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11670|10.60.135.135/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+3264|10.60.135.167/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+3274|10.60.135.168/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL180 Gen9|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+1978|10.60.135.169/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+2010|10.60.135.170/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+3272|10.60.135.171/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+1975|10.60.135.172/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+11721|10.60.137.53/32|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|dunght42
+11721|10.60.137.53/32|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|dunght42
+11721|10.60.137.53/32|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|dunght42
+11722|10.60.137.56/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|dunght42
+11722|10.60.137.56/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|dunght42
+9530|10.240.158.6/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9499|10.240.158.21/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9505|10.240.158.26/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9520|10.240.158.3/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9522|10.240.158.4/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9525|10.240.158.5/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9493|10.240.158.16/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9494|10.240.158.17/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTKTTC_CNTT|dungld10
+9495|10.240.158.18/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+14360|10.255.62.150/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL180 Gen9|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+14117|10.255.62.151/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL180 Gen9|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+14116|10.255.62.152/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL180 Gen9|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+14356|10.255.62.153/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL180 Gen9|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+14354|10.255.62.154/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL180 Gen9|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+21156|10.255.63.163/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+21053|10.255.63.164/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+21157|10.255.63.165/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M4|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+23768|10.255.63.166/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+23720|10.255.63.167/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+23749|10.255.63.168/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+23717|10.255.63.169/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+20993|10.255.63.170/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+21158|10.255.63.171/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+20994|10.255.63.172/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+20994|10.255.63.172/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11675|10.60.135.140/13|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11676|10.60.135.141/14|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11730|10.60.137.73/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11730|10.60.137.73/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+11731|10.60.137.75/24|Vật lý|HLC|Floor 6.1|UCSC-C240-M4SX|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9536|10.240.158.7/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9541|10.240.158.8/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9542|10.240.158.9/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9503|10.240.158.24/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9504|10.240.158.25/26|CLOUD|HLC|{'id': 155, 'url': 'http://dcim.viettel.vn/api/dcim/locations/155/', 'display': 'Floor 5.1', 'name': 'Floor 5.1', 'slug': 'floor-5-1', '_depth': 0}|ProLiant BL460c Gen9|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9504|10.240.158.25/26|CLOUD|HLC|{'id': 155, 'url': 'http://dcim.viettel.vn/api/dcim/locations/155/', 'display': 'Floor 5.1', 'name': 'Floor 5.1', 'slug': 'floor-5-1', '_depth': 0}|ProLiant BL460c Gen9|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9504|10.240.158.25/26|CLOUD|HLC|{'id': 155, 'url': 'http://dcim.viettel.vn/api/dcim/locations/155/', 'display': 'Floor 5.1', 'name': 'Floor 5.1', 'slug': 'floor-5-1', '_depth': 0}|ProLiant BL460c Gen9|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9531|10.240.158.75/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9532|10.240.158.76/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9533|10.240.158.77/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9534|10.240.158.78/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9510|10.240.158.30/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9511|10.240.158.31/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9512|10.240.158.32/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9513|10.240.158.33/26|Vật lý|HLC|Floor 6.1|UCSC-C240-M4S2|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9514|10.240.158.34/26|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9515|10.240.158.35/26|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+9516|10.240.158.36/26|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+53594|10.207.155.69/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53613|10.207.155.70/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53595|10.207.155.72/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VIETTEL|hiennn10
+53614|10.207.155.73/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VIETTEL|hiennn10
+53596|10.207.155.74/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53597|10.207.155.75/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53598|10.207.155.76/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53599|10.207.155.77/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VIETTEL|hiennn10
+53615|10.207.155.78/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53600|10.207.155.79/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VIETTEL|hiennn10
+53601|10.207.155.80/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53602|10.207.155.81/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53603|10.207.155.82/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VIETTEL|hiennn10
+53616|10.207.155.83/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VIETTEL|hiennn10
+53604|10.207.155.84/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53605|10.207.155.85/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53606|10.207.155.86/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53607|10.207.155.87/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VIETTEL|hiennn10
+53617|10.207.155.88/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VIETTEL|hiennn10
+53608|10.207.155.89/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53583|10.207.155.90/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53584|10.207.155.91/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53585|10.207.155.92/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VIETTEL|hiennn10
+53618|10.207.155.93/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|hiennn10
+53586|10.207.155.65/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VIETTEL|kietna
+53609|10.207.155.66/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VIETTEL|kietna
+53587|10.207.155.67/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|kietna
+53610|10.207.62.48/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|kietna
+53588|10.207.62.49/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|kietna
+53589|10.207.62.50/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VIETTEL|kietna
+53611|10.207.62.52/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VIETTEL|kietna
+53590|10.207.62.53/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|kietna
+53591|10.207.62.54/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VIETTEL|kietna
+53612|10.207.62.56/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|kietna
+53592|10.207.62.57/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VIETTEL|kietna
+53593|10.207.62.58/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VIETTEL|kietna
+51990|10.207.62.106/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VTN_TTVHKTTC_HTCNTTVT|kietna
+51991|10.207.62.107/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VTN_TTVHKTTC_HTCNTTVT|kietna
+51992|10.207.62.108/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|kietna
+51993|10.207.62.110/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|PowerEdge R640|VTN_TTVHKTTC_HTCNTTVT|kietna
+51994|10.207.62.111/24|CLOUD|HLC|{'id': 163, 'url': 'http://dcim.viettel.vn/api/dcim/locations/163/', 'display': 'Floor 7.2', 'name': 'Floor 7.2', 'slug': 'floor-7-2', '_depth': 0}|ProLiant DL360 Gen10|VTN_TTVHKTTC_HTCNTTVT|kietna
+51995|10.207.62.112/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|kietna
+2814|10.30.143.117/32|Vật lý|HLC|Floor 2.1|IBM System x3650 M4: -[7915C2A]-|VTT_TTVAS_KTHT|kiennt9
+2639|10.30.143.118/32|Vật lý|HLC|Floor 2.1|IBM X3650 M4|VTT_TTVAS_KTHT|kiennt9
+7306|10.255.67.28/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+6007|10.255.67.29/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|trongvd
+6007|10.255.67.29/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|trongvd
+1690|10.60.106.89/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+2514|10.60.106.90/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+17414|10.255.67.160/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+17399|10.255.67.161/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+17399|10.255.67.161/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+2880|10.60.135.15/24|CLOUD|HLC|{'id': 153, 'url': 'http://dcim.viettel.vn/api/dcim/locations/153/', 'display': 'Floor 2.1', 'name': 'Floor 2.1', 'slug': 'floor-2-1', '_depth': 0}|SUN NETRA X4250|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+2519|10.60.135.16/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+2738|10.60.135.17/24|CLOUD|DEFAULT SITE|None|Default Device Type|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+1598|10.60.135.18/24|CLOUD|HLC|{'id': 153, 'url': 'http://dcim.viettel.vn/api/dcim/locations/153/', 'display': 'Floor 2.1', 'name': 'Floor 2.1', 'slug': 'floor-2-1', '_depth': 0}|SUN NETRA X4250|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+73|10.60.97.68/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+2154|10.60.97.69/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+549|10.60.102.203/25|CLOUD|DEFAULT SITE|None|Default Device Type|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+647|10.60.102.204/25|CLOUD|DEFAULT SITE|None|Default Device Type|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+1715|10.60.135.4/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL180 Gen9|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+11724|10.60.137.5/32|Vật lý|HLC|Floor 6.1|UCSB-B200-M4|VTN_TTVHKTTC_HTCNTTVT|tuannd1
+11734|10.60.137.7/32|Vật lý|HLC|Floor 6.1|UCSB-B200-M4|VTN_TTVHKTTC_HTCNTTVT|tuannd1
+2519|10.60.135.16/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+2738|10.60.135.17/24|CLOUD|DEFAULT SITE|None|Default Device Type|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+10390|10.30.4.4/28|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PowerEdge R640|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+10391|10.30.4.5/28|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+10392|10.30.4.7/28|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+10393|10.30.4.8/28|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY RX2530 M5|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+10388|10.30.4.10/28|Vật lý|HLC|Floor 2.1|PowerEdge R720|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+10389|10.30.4.11/28|Vật lý|HLC|Floor 2.1|PowerEdge R720|VTN_TTVHKTTC_HTCNTTVT|thucnh2
+44376|10.255.63.132/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M4|VTT_TTVAS_KTHT|vmtuan
+53475|10.255.63.133/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTNET|vmtuan
+53476|10.255.63.134/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|PRIMERGY CX2560 M5|VTNET|vmtuan
+53477|10.255.63.135/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTNET|vmtuan
+9753|10.240.188.6/13|Vật lý|HLC|Floor 6.2|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|hanm24
+9753|10.240.188.6/13|Vật lý|HLC|Floor 6.2|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|hanm24
+9754|10.240.188.8/12|Vật lý|HLC|Floor 6.2|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|hanm24
+9754|10.240.188.8/12|Vật lý|HLC|Floor 6.2|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|hanm24
+9746|10.240.188.10/13|Vật lý|HLC|Floor 6.2|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|hanm24
+9746|10.240.188.10/13|Vật lý|HLC|Floor 6.2|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|hanm24
+9754|10.240.188.8/12|Vật lý|HLC|Floor 6.2|ProLiant DL380 Gen9|VTN_TTVHKTTC_HTCNTTVT|hanm24
+10826|10.58.41.15/27|Vật lý|PVN|T5|PowerEdge R710|VTT_TTVAS_KTHT|chankx
+2961|10.240.186.7/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL180 Gen9|VTN_TTVHKTTC_HTCNTTVT|nghialt4
+3323|10.240.186.8/24|CLOUD|HLC|{'id': 158, 'url': 'http://dcim.viettel.vn/api/dcim/locations/158/', 'display': 'Floor 6.2', 'name': 'Floor 6.2', 'slug': 'floor-6-2', '_depth': 0}|ProLiant DL380 Gen10|VTN_TTVHKTTC_HTCNTTVT|nghialt4
