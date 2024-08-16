@@ -1,1 +1,1 @@
-print("fuckoff jenkins")
+print("hello jenkins from windows")
